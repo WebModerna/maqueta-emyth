@@ -1,0 +1,66 @@
+/**
+ * # Panel
+ 
+	<div class="Panel">
+		<h3>Título</h3>
+		<figure>
+			<img src="img/imagen.jpg" alt="algo" />
+			<figcaption>Algo</figcaption>
+		</figure>
+		<div class="Panel--contenido">
+			<p>Algo de contenido ...</p>
+		</div>
+	</div>
+*/
+
+$panel-background-color ?= $white
+$panel-border-color ?= $silver
+$panel-border-width ?= 1px
+
+.Panel
+	background $panel-background-color
+	border $panel-border-width solid $panel-border-color
+	box-shadow 0 $panel-border-width 0 $panel-border-color
+	box-sizing border-box
+	margin 1em auto
+	overflow hidden
+	
+	&--contenido
+		padding 0.5em
+	
+	figure
+		border $panel-border-width solid $panel-border-color
+		margin 0 0 1em 0
+		max-width 20em
+		
+		figcaption
+			border-top $panel-border-width solid $panel-border-color
+			color $gris_fuerte
+			padding 0.5em 1em
+			text-align center
+			&:first-letter
+				text-transform uppercase
+
+		img
+			display block
+			width 100%
+
+	// No hay necesidad de una clase. Sabemos que va a ser un título.
+	& > h2
+	& > h3
+	& > h4
+	& > h5
+	& > h6
+		background $nube
+		border-bottom $panel-border-width solid $panel-border-color
+		margin 0
+		padding 0.3em
+		text-align center
+
+@media all and (min-width:21em)
+	.Panel
+		&--contenido
+			overflow hidden
+		figure
+			float left
+			margin 1em 1em 1em auto

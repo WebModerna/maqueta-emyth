@@ -1,0 +1,36 @@
+// El encabezado principal de la web
+.header
+	background $black
+	box-sizing border-box
+
+@media only screen and (min-width:56.8em)
+	.header
+		overflow hidden
+		
+	
+
+// El logotipo
+/*
+Siempre tiene la forma siguiente
+<div class="logo">
+	<a href="enlace">
+		<img src="img/logo.png" alt="título" />
+	</a>
+</div>
+*/
+.logo
+	background $white
+	border-radius 50%
+	padding 0.3em
+	display inline-block
+	margin-left 0.5em
+	margin-top 0.5em
+	img
+		display block
+		width 50px
+	a
+		display block
+		transition_comun()
+		&:hover
+			opacity 0.6
+			transform scale(1.05)

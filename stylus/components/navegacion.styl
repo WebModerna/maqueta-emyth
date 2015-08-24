@@ -1,0 +1,115 @@
+// Formato de la barra de navegación principal
+.nav
+	box-sizing border-box
+	position relative
+	z-index 3
+	&--listado
+		background $gris_fuerte
+		display block
+		font-family $baseHeadingFontFamily
+		// height 0
+		top -400px
+		margin 0
+		opacity 0
+		position absolute
+		padding 0
+		transition_comun()
+		visibility hidden
+		width 100%
+	
+		&--item
+			display block
+			list-style none
+			a // Los enlaces
+				display block
+				color $white
+				padding 1em
+				position relative
+				text-decoration none
+				text-shadow_lindo()
+				transition_comun()
+				z-index 3
+				&:after // El símbolo al final
+					// content "-›"
+					content "→"
+					display inline-block
+					float right
+					transition_comun()
+				&:before
+					background $black
+					content ""
+					height 100%
+					left 0
+					opacity 0.5
+					position absolute
+					top 0
+					transition_comun()
+					width 0
+					z-index -1
+				
+				// Estilos al hover y al focus
+				&:hover
+				&:focus
+					&:before
+						width 100%
+						
+						
+		// Estilo solo al border superior exepto al primer item del menú
+		&--item + &--item
+			border-top 1px solid $gray
+			
+		// Estilos cuando está abierto o cerrado el menú de navegación
+		&-abrir
+			// height auto
+			top 0
+			opacity 1
+			visibility visible
+		&-cerrar
+			// height 0
+			top -400px
+			opacity 0
+			visibility hidden
+
+// Estilos cuando el item está siendo visitado actualmente
+.current_menu_item
+.current_page_item
+	a
+		background $asfalto
+		&:after
+			transform rotate(90deg)
+
+// Cuando se agranda la pantalla
+@media only screen and (min-width:56.8em)
+	.nav
+		display inline-block
+		float right
+		&--listado
+			background none
+			margin-top 0.6em
+			opacity 1
+			overflow hidden
+			position relative
+			top auto
+			vertical-align middle
+			visibility visible
+			&--item
+				display inline-block
+				float left
+				a
+					&:after // Eliminamos símbolo al final
+						display none
+					&:before
+						bottom 0
+						height 0
+						top auto
+						width 100%
+					&:hover
+					&:focus
+						&:before
+							border-top 0.3em solid $white
+							height 0.8em
+						
+				
+			// Eliminamos el estilo solo al border superior exepto al primer item del menú
+			&--item + &--item
+				border-top none
