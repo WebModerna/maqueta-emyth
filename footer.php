@@ -19,7 +19,7 @@
 		</footer>
 		
 		<!-- scripts generales y condicionales para IE-->
-		<script type="text/javascript" src="js/scripts.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
 		<!--[if IE 8]>
 		<script type="text/javascript" src="js/respond.js"></script>
 		<![endif]-->

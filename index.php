@@ -1,8 +1,14 @@
 <?php
 // El encabezado completo
 require_once "header.php";?>
-
+	
 	<main>
+		<section class="slider">
+			<div class="slide slide-1 animated fadeIn infinite hinge"></div>
+			<div class="slide slide-2 animated fadeIn infinite hinge"></div>
+			<div class="slide slide-3 animated fadeIn infinite hinge"></div>
+			<div class="slide slide-4 animated fadeIn infinite hinge"></div>
+		</section>
 		<section>
 			<ul class="breadcrums">
 				<li class="breadcrums--label">Ud. está aquí: </li>
@@ -12,29 +18,31 @@ require_once "header.php";?>
 				<li class="breadcrums-muted">Ya llegué</li>
 			</ul>
 		</section>
+		
 		<section>
 			<div class="Panel-small">
 				<figure>
-					<a href=""><img src="img/logo.png" alt="algo" /></a>
+					<a href=""><img src="img/p2.jpg" alt="algo" /></a>
 				</figure>
 				<h3><a href="">Las vacas vuelan y hacen ganar plata</a></h3>
 				<span class="icon-calendar right"></span>21/23/2028
 			</div>
 			<div class="Panel-small">
 				<figure>
-					<a href=""><img src="img/logo.png" alt="algo" /></a>
+					<a href=""><img src="img/p2.jpg" alt="algo" /></a>
 				</figure>
 				<h3><a href="">Las vacas vuelan y hacen ganar plata</a></h3>
 				<span class="icon-calendar right"></span>21/23/2028
 			</div>
 			<div class="Panel-small">
 				<figure>
-					<a href=""><img src="img/logo.png" alt="algo" /></a>
+					<a href=""><img src="img/p2.jpg" alt="algo" /></a>
 				</figure>
 				<h3><a href="">Las vacas vuelan y hacen ganar plata</a></h3>
 				<span class="icon-calendar right"></span>21/23/2028
 			</div>
-			<hr />
+		</section>
+		<section>
 			<div class="etiqueta">
 				<span class="icon-star right"></span>Oferta
 			</div>
@@ -50,13 +58,113 @@ require_once "header.php";?>
 			<div class="etiqueta etiqueta-negro">
 				<span class="icon-star right"></span>Oferta
 			</div>
-			<hr />
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</p>
-			</blockquote>
-			<cite>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.
-			</cite>
+		</section>
+		<section>
+			<article>
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</p>
+				</blockquote>
+			</article>
+			<article>
+				<cite>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.
+				</cite>
+			</article>
+		</section>
+		<section class="Vidriera">
+			<article class="Vidriera--estante animated slideInUp">
+				<figure class="imagen">
+					<img src="img/divi2-blurb-1.jpg" alt="foto" />
+				</figure>
+				<div class="contenido">
+					<h2>Entrevistas</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magni sapiente mi</p>
+				</div>
+			</article>
+			<article class="Vidriera--estante animated slideInUp">
+				<figure class="imagen">
+					<img src="img/divi2-blurb-2.jpg" alt="foto" />
+				</figure>
+				<div class="contenido">
+					<h2>Entrevistas</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magni sapiente mi</p>
+				</div>
+			</article>
+			<article class="Vidriera--estante animated slideInUp">
+				<figure class="imagen">
+					<img src="img/divi2-blurb-3.jpg" alt="foto" />
+				</figure>
+				<div class="contenido">
+					<h2>Entrevistas</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magni sapiente mi</p>
+				</div>
+			</article>
+			<article class="Vidriera--estante animated slideInUp">
+				<figure class="imagen">
+					<img src="img/divi2-blurb-3.jpg" alt="foto" />
+				</figure>
+				<div class="contenido">
+					<h2>Entrevistas</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magni sapiente mi</p>
+				</div>
+			</article>
+		</section>
+		<section><!-- Tienen un pequeño margen a eliminar -->
+			<div class="alerta alerta-rojo">
+				<div class="alerta--icono">
+					<span class="icon-denied"></span>
+				</div>
+				<div class="alerta--mensaje">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+				</div>
+				<div class="alerta--close">
+					<a class="icon-x" href="#"></a>
+				</div>
+			</div>
+			<div class="alerta alerta-azul">
+				<div class="alerta--icono">
+					<span class="icon-info"></span>
+				</div>
+				<div class="alerta--mensaje">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+				</div>
+				<div class="alerta--close">
+					<a class="icon-x" href="#"></a>
+				</div>
+			</div>
+			<div class="alerta alerta-verde">
+				<div class="alerta--icono">
+					<span class="icon-check-alt"></span>
+				</div>
+				<div class="alerta--mensaje">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+				</div>
+				<div class="alerta--close">
+					<a class="icon-x" href="#"></a>
+				</div>
+			</div>
+			<div class="alerta alerta-amarillo">
+				<div class="alerta--icono">
+					<span class="icon-alert"></span>
+				</div>
+				<div class="alerta--mensaje">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+				</div>
+				<div class="alerta--close">
+					<a class="icon-x" href="#"></a>
+				</div>
+			</div>
+			<div class="alerta alerta-gris">
+				<div class="alerta--icono">
+					<span class="icon-question2"></span>
+				</div>
+				<div class="alerta--mensaje">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+				</div>
+				<div class="alerta--close">
+					<a class="icon-x" href="#"></a>
+				</div>
+			</div>
 		</section>
 		<section>
 			<article>
@@ -151,14 +259,14 @@ require_once "header.php";?>
 			<h2>Hola</h2>
 			<div class="Panel--contenido">
 				<figure>
-					<img src="img/p5.jpg" alt="algo" />
+					<img src="img/p2.jpg" alt="algo" />
 					<figcaption>explanatory caption</figcaption>
 				</figure>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 			</div>
 		</div>
 	</aside>
-	
+
 
 <?php
 // El pie de página completo

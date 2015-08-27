@@ -146,3 +146,47 @@ $('a[href*=#]').click(function()
 		};
 	};
 }());
+
+
+// Los cuadros de información. Se debería mejorar el script
+(function()
+{
+	$(document).on("ready", cerrar_cuadro);
+	function cerrar_cuadro()
+	{
+		$('.alerta-rojo .alerta--close a').on("click", borrando);
+		function borrando(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-rojo').remove();
+		}
+
+		$('.alerta-verde .alerta--close a').on("click", borrando2);
+		function borrando2(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-verde').remove();
+		}
+
+		$('.alerta-azul .alerta--close a').on("click", borrando3);
+		function borrando3(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-azul').remove();
+		}
+
+		$('.alerta-amarillo .alerta--close a').on("click", borrando4);
+		function borrando4(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-amarillo').remove();
+		}
+
+		$('.alerta-gris .alerta--close a').on("click", borrando5);
+		function borrando5(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-gris').remove();
+		}
+	}
+}());

@@ -4,7 +4,7 @@
 	position relative
 	z-index 3
 	&--listado
-		background $gris_fuerte
+		background $black
 		display block
 		font-family $baseHeadingFontFamily
 		// height 0
@@ -36,7 +36,7 @@
 					float right
 					transition_comun()
 				&:before
-					background $black
+					background $ladrillo
 					content ""
 					height 100%
 					left 0
@@ -57,6 +57,8 @@
 		// Estilo solo al border superior exepto al primer item del menú
 		&--item + &--item
 			border-top 1px solid $gray
+			border-top 1px solid rgba($black_puro, 0.25)
+			box-shadow 0px 1px 0px 0px rgba($white, 0.075) inset
 			
 		// Estilos cuando está abierto o cerrado el menú de navegación
 		&-abrir
@@ -74,9 +76,12 @@
 .current_menu_item
 .current_page_item
 	a
-		background $asfalto
+		color $Celeste
+		cursor initial
 		&:after
 			transform rotate(90deg)
+		&:before
+			display none
 
 // Cuando se agranda la pantalla
 @media only screen and (min-width:56.8em)
@@ -106,10 +111,11 @@
 					&:hover
 					&:focus
 						&:before
-							border-top 0.3em solid $white
-							height 0.8em
+							box-shadow_lindo()
+							height 100%
 						
 				
 			// Eliminamos el estilo solo al border superior exepto al primer item del menú
 			&--item + &--item
 				border-top none
+				box-shadow none

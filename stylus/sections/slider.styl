@@ -1,0 +1,23 @@
+/*
+El slider. Por una cuestión de experimento pondré solo backgrounds como imágenes.
+*/
+
+.slider
+	height 100vh
+	position relative
+	.slide
+		background-color $ladrillo
+		background-size cover
+		height 100vh
+		left 0
+		// position absolute
+		top 0
+		z-index 4
+		&-1
+			background-image url('../img/slide-1.jpg')
+		&-2
+			background-image url('../img/slide-2.jpg')
+		&-3
+			background-image url('../img/slide-3.jpg')
+		&-4
+			background-image url('../img/slide-1.jpg')
