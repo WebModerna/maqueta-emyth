@@ -11,20 +11,23 @@ $fondo_vidiera			?= $silver
 $color_borde_vidiera	?= $silver
 
 
-.Vidriera
+.Vidriera-2
 	text-align center
 	&--estante
+		border 1px solid $fondo_vidiera
 		border-radius 0.5em
+		box-shadow 0px 0px 99px $nube inset
 		display inline-block
+		margin-top 3em
 		max-width 17em
-		overflow hidden		
 
 		.imagen
 			border-bottom 1px solid $color_borde_vidiera
 			box-sizing border-box
 			display block
-			margin auto
+			margin -3em auto auto auto
 			padding 1em
+			position relative
 			img
 				border-radius 50%
 				display block
@@ -38,6 +41,6 @@ $color_borde_vidiera	?= $silver
 				color $Celeste
 				
 @media only screen and (min-width:30em)
-	.Vidriera
+	.Vidriera-2
 		&--estante
-			margin 0.2em
+			margin 3em 0.2em 0.2em 0.2em

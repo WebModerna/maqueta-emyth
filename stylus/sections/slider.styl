@@ -1,23 +1,65 @@
 /*
 El slider. Por una cuestión de experimento pondré solo backgrounds como imágenes.
 */
-
 .slider
+	background $ladrillo
+	height 100%
 	height 100vh
 	position relative
+	overflow hidden
+	
 	.slide
-		background-color $ladrillo
-		background-size cover
+		height 100%
 		height 100vh
-		left 0
-		// position absolute
+		overflow hidden
+		position absolute
+		width 100%
+		img
+			display block
+			opacity 0
+			width 100%
+
+				
+.slider-navegacion
+	height 50%
+	position absolute
+	top 0
+	width 100%
+	z-index 6
+	p
+		background rgba($morado_claro, 0.5)
+		border-radius 0.3em
+		box-shadow 5px 5px 10px $black
+		color $white
+		font-size 1.2em
+		display inline-block
+		padding 0.5em
+		opacity 0
+		position absolute
 		top 0
-		z-index 4
-		&-1
-			background-image url('../img/slide-1.jpg')
-		&-2
-			background-image url('../img/slide-2.jpg')
-		&-3
-			background-image url('../img/slide-3.jpg')
-		&-4
-			background-image url('../img/slide-1.jpg')
+		left 1em
+		transition_comun()
+		visibility hidden
+		width auto
+		a
+			visibility hidden
+	
+	.selected
+		opacity 1
+		transition_comun()
+		visibility visible
+		
+@media only screen and (min-width:30em)
+	.slider-navegacion
+		height 100%
+		padding 1em
+		p
+			left auto
+			right 1em
+			
+@media only screen and (min-width:40em)
+	.slider-navegacion
+		p
+			font-size 2em
+		
+			

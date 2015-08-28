@@ -37,7 +37,7 @@
 	<body>
 		<header class="header">
 			<div class="logo">
-				<a href="">
+				<a href="index.php">
 					<img src="img/logo.png" />
 				</a>
 			</div>
@@ -52,13 +52,13 @@
 			
 			<nav class="nav">
 				<ul id="header_nav" class="nav--listado">
-					<li class="nav--listado--item current_menu_item current_page_item"><a href="">Home</a></li>
-					<li class="nav--listado--item"><a href="">Productos</a></li>
-					<li class="nav--listado--item"><a href="">Registro</a></li>
-					<li class="nav--listado--item"><a href="">Deshubicación</a></li>
-					<li class="nav--listado--item"><a href="">Servicios</a></li>
-					<li class="nav--listado--item"><a href="">About Us</a></li>
-					<li class="nav--listado--item"><a href="">Contacto</a></li>
+					<li class="nav--listado--item current_menu_item current_page_item"><a href="index.php">Home</a></li>
+					<li class="nav--listado--item"><a href="#productos">Productos</a></li>
+					<li class="nav--listado--item"><a href="#blog">Blog</a></li>
+					<li class="nav--listado--item"><a href="#ubicacion">Deshubicación</a></li>
+					<li class="nav--listado--item"><a href="#servicios">Servicios</a></li>
+					<li class="nav--listado--item"><a href="#about_us">About Us</a></li>
+					<li class="nav--listado--item"><a href="#contacto">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
