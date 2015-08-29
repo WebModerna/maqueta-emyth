@@ -1024,18 +1024,96 @@ h5,
 h6 {
   font-family: 'Lato', sans-serif;
 }
-h1,
-.h1 {
-  font-weight: normal;
+.fondo {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .heading {
   background: #e74c3c;
   padding: 0.5em;
 }
-.heading h2 {
+.heading h1,
+.heading h2,
+.heading h3,
+.heading h4,
+.heading h5,
+.heading h6,
+.heading .h1,
+.heading .h2,
+.heading .h3,
+.heading .h4,
+.heading .h5,
+.heading .h6 {
   color: #fff;
   font-size: 1.7em;
   text-align: center;
+}
+.heading h1 [class^="icon-"],
+.heading h2 [class^="icon-"],
+.heading h3 [class^="icon-"],
+.heading h4 [class^="icon-"],
+.heading h5 [class^="icon-"],
+.heading h6 [class^="icon-"],
+.heading .h1 [class^="icon-"],
+.heading .h2 [class^="icon-"],
+.heading .h3 [class^="icon-"],
+.heading .h4 [class^="icon-"],
+.heading .h5 [class^="icon-"],
+.heading .h6 [class^="icon-"],
+.heading h1 [class*=" icon-"],
+.heading h2 [class*=" icon-"],
+.heading h3 [class*=" icon-"],
+.heading h4 [class*=" icon-"],
+.heading h5 [class*=" icon-"],
+.heading h6 [class*=" icon-"],
+.heading .h1 [class*=" icon-"],
+.heading .h2 [class*=" icon-"],
+.heading .h3 [class*=" icon-"],
+.heading .h4 [class*=" icon-"],
+.heading .h5 [class*=" icon-"],
+.heading .h6 [class*=" icon-"] {
+  float: left;
+}
+.heading-item {
+  padding: 0.2em;
+  position: relative;
+}
+.heading-item h1,
+.heading-item h2,
+.heading-item h3,
+.heading-item h4,
+.heading-item h5,
+.heading-item h6,
+.heading-item .h1,
+.heading-item .h2,
+.heading-item .h3,
+.heading-item .h4,
+.heading-item .h5,
+.heading-item .h6 {
+  color: #fff;
+  text-align: center;
+}
+.heading-item.verde {
+  background: #a0c275;
+}
+.heading-item.azul {
+  background: #2980b9;
+}
+.heading-item.gris {
+  background: $gris;
+}
+.heading-item.google {
+  background: #c0392b;
+}
+.heading-item.negro {
+  background: #444;
+}
+.heading-item.morado {
+  background: #9b59b6;
+}
+.heading-item.naranja {
+  background: #da572b;
 }
 .is-hidden {
   display: none !important;
@@ -1058,6 +1136,12 @@ a .aligncenter {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1em;
+}
+.ul_horizontal li {
+  display: inline-block;
+}
+.ul_horizontal li + li {
+  border-left: 1px dotted #bdc3c7;
 }
 .alerta {
   -webkit-border-radius: 0.2em;
@@ -2690,13 +2774,12 @@ input[type="reset"].morado:active,
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1em auto;
-  overflow: hidden;
+  position: relative;
 }
 .Panel--contenido {
   padding: 0.5em;
 }
 .Panel figure {
-  border: 1px solid #bdc3c7;
   margin: 0 0 1em 0;
   max-width: 20em;
 }
@@ -2711,6 +2794,7 @@ input[type="reset"].morado:active,
 }
 .Panel figure img {
   display: block;
+  position: relative;
   width: 100%;
 }
 .Panel > h2,
@@ -2731,6 +2815,14 @@ input[type="reset"].morado:active,
   .Panel figure {
     float: left;
     margin: 1em 1em 1em auto;
+  }
+}
+@media all and (min-width: 40em) {
+  .Panel--contenedor {
+    display: inline-block;
+    padding-right: 0.5em;
+    vertical-align: top;
+    width: 49.5%;
   }
 }
 .Panel-small {
@@ -2960,13 +3052,6 @@ input[type="reset"].morado:active,
   }
   .nav--listado--item a:hover:before,
   .nav--listado--item a:focus:before {
-    box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -o-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -ms-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -o-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -ms-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-    -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
     height: 100%;
   }
   .nav--listado--item + .nav--listado--item {
@@ -3170,8 +3255,9 @@ cite:before {
   padding-right: 1em;
   padding-top: 2px;
   padding-bottom: 0;
-  position: relative;
-  right: -10px;
+  position: absolute;
+  right: -1.6em;
+  top: 1em;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
   -o-text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
   -ms-text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
@@ -3269,7 +3355,8 @@ cite:before {
   content: " :";
 }
 .pagination .current {
-  color: #bdc3c7;
+  color: #7f8c8d;
+  font-weight: bolder;
 }
 .header {
   background: #444;
@@ -3322,6 +3409,7 @@ cite:before {
   display: inline-block;
   max-width: 17em;
   overflow: hidden;
+  position: relative;
 }
 .Vidriera--estante .imagen {
   border-bottom: 1px solid #bdc3c7;
@@ -3366,8 +3454,20 @@ cite:before {
   -ms-box-shadow: 0px 0px 99px #ecf0f1 inset;
   -moz-box-shadow: 0px 0px 99px #ecf0f1 inset;
   display: inline-block;
-  margin-top: 3em;
+  margin-top: 4.5em;
   max-width: 17em;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Vidriera-2--estante:hover {
+  box-shadow: 0px 0px 99px #aaa inset;
+  -o-box-shadow: 0px 0px 99px #aaa inset;
+  -ms-box-shadow: 0px 0px 99px #aaa inset;
+  -moz-box-shadow: 0px 0px 99px #aaa inset;
 }
 .Vidriera-2--estante .imagen {
   border-bottom: 1px solid #bdc3c7;
@@ -3375,15 +3475,33 @@ cite:before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  margin: -3em auto auto auto;
+  margin: -4em auto auto auto;
+  overflow: hidden;
   padding: 1em;
   position: relative;
+  width: 130px;
 }
 .Vidriera-2--estante .imagen img {
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  box-shadow: 0px 5px 2px #444;
+  -o-box-shadow: 0px 5px 2px #444;
+  -ms-box-shadow: 0px 5px 2px #444;
+  -moz-box-shadow: 0px 5px 2px #444;
   display: block;
   width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Vidriera-2--estante .imagen img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .Vidriera-2--estante .contenido {
   color: #7f8c8d;
@@ -3398,11 +3516,12 @@ cite:before {
 }
 @media only screen and (min-width: 30em) {
   .Vidriera-2--estante {
-    margin: 3em 0.2em 0.2em 0.2em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
   }
 }
 .slider {
-  background: #e74c3c;
+  background: #34495e;
   height: 100%;
   height: 100vh;
   position: relative;
@@ -3484,6 +3603,181 @@ cite:before {
     font-size: 2em;
   }
 }
+.portfolio {
+  padding: 3px;
+  text-align: center;
+}
+.contenedor__item {
+  display: inline-block;
+  margin: 0.2em auto;
+  padding-right: 1em;
+  vertical-align: top;
+}
+.item {
+  max-width: 290px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.item:hover,
+.item:focus {
+  background: rgba(68,68,68,0.5);
+  box-shadow: 0px 0px 5px 5px #444;
+  -o-box-shadow: 0px 0px 5px 5px #444;
+  -ms-box-shadow: 0px 0px 5px 5px #444;
+  -moz-box-shadow: 0px 0px 5px 5px #444;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.item figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.item figure img {
+  display: block;
+  max-width: 290px;
+  width: 100%;
+}
+.sidebar {
+  background: #444;
+  color: #aaa;
+  overflow: hidden;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  position: relative;
+}
+.sidebar a {
+  color: #ecf0f1;
+}
+.widget {
+  margin-bottom: 1em;
+}
+.widget a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.widget a:hover,
+.widget a:focus {
+  color: #da572b;
+}
+.widget address {
+  font-style: normal;
+}
+.widget figure {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 100px;
+}
+.widget figure img {
+  width: 100%;
+}
+.widget header {
+  border-bottom: 3px solid #47a5c5;
+  margin-bottom: 0.5em;
+}
+.widget header h2,
+.widget header h3,
+.widget header h4,
+.widget header h5,
+.widget header h6 {
+  color: inherit;
+  font-size: 1.3em;
+}
+.widget ul {
+  margin: 0;
+  padding: 0;
+}
+.widget ul li {
+  display: block;
+  padding: 0.5em 0;
+  list-style: none;
+}
+.widget ul li + li {
+  border-top: 1px dotted #7f8c8d;
+}
+@media only screen and (min-width: 40em) {
+  .sidebar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .widget--sidebar--footer {
+    display: block;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 70em) {
+  .widget--sidebar--footer {
+    width: 25%;
+  }
+}
+.main__footer {
+  padding: 1em;
+  text-align: center;
+}
+.redes_sociales ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.redes_sociales ul li {
+  display: inline-block;
+}
+.elementos_post {
+  clear: both;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #bdc3c7;
+  text-align: center;
+}
+.elementos_post li {
+  background: #ecf0f1;
+  display: inline-block;
+  margin: 2px;
+  padding: 0.5em;
+}
+.elementos_post li a {
+  color: #47a5c5;
+}
+.elementos_post li a:hover,
+.elementos_post li a:focus {
+  color: #c0392b;
+}
+.elementos_post li a,
+.elementos_post li span {
+  display: inline-block;
+}
+@media only screen and (min-width: 50em) {
+  .columna--left,
+  .columna--right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .columna--left {
+    width: 70%;
+  }
+  .columna--right {
+    margin-left: 1%;
+    width: 28%;
+  }
+}
 /*
 @import 'lib/nib'
 @import 'lib/normalize.styl'
@@ -3556,4 +3850,4 @@ input[type="checkbox"]
 		position absolute
 		transition all 0.3s ease-in-out
 		visibility visible
-*/
+

@@ -1,10 +1,10 @@
-		<footer class="footer">
-			<div class="footer__social">
+		<footer class="main__footer">
+			<div class="redes_sociales">
 				<ul>
-					<li><a class="boton small azul icon-facebook" href="#" title="Facebook"></a></li>
-					<li><a class="boton small rojo icon-google-plus" href="#" title="Google+"></a></li>
-					<li><a class="boton small icon-twitter" href="#" title="Twitter"></a></li>
-					<li><a class="boton small naranja icon-feed2" href="#" title="Feed"></a></li>
+					<li><a class="boton azul icon-facebook" href="#" title="Facebook"></a></li>
+					<li><a class="boton rojo icon-google-plus" href="#" title="Google+"></a></li>
+					<li><a class="boton icon-twitter" href="#" title="Twitter"></a></li>
+					<li><a class="boton naranja icon-feed2" href="#" title="Feed"></a></li>
 				</ul>
 			</div>
 			<div class="copyright">

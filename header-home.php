@@ -12,7 +12,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
 		<meta name="description" content="Coaching empresarial" />
-		<title>El blog | Emyth Argentina</title>
+		<title>Emyth Argentina | el futuro de los negocios</title>
 		
 		<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
 		
@@ -52,13 +52,13 @@
 			
 			<nav class="nav">
 				<ul id="header_nav" class="nav--listado">
-					<li class="nav--listado--item"><a href="index.php">Home</a></li>
-					<li class="nav--listado--item"><a href="productos.php">Productos</a></li>
-					<li class="nav--listado--item current_menu_item current_page_item"><a href="blog.php">Blog</a></li>
-					<li class="nav--listado--item"><a href="#">Deshubicación</a></li>
-					<li class="nav--listado--item"><a href="#">Servicios</a></li>
-					<li class="nav--listado--item"><a href="#">About Us</a></li>
-					<li class="nav--listado--item"><a href="#">Contacto</a></li>
+					<li class="nav--listado--item current_menu_item current_page_item"><a href="index.php">Home</a></li>
+					<li class="nav--listado--item"><a href="#productos">Productos</a></li>
+					<li class="nav--listado--item"><a href="#blog">Blog</a></li>
+					<li class="nav--listado--item"><a href="#ubicacion">Deshubicación</a></li>
+					<li class="nav--listado--item"><a href="#servicios">Servicios</a></li>
+					<li class="nav--listado--item"><a href="#about_us">About Us</a></li>
+					<li class="nav--listado--item"><a href="#contacto">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
