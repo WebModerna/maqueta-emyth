@@ -6,29 +6,29 @@
 				</header>
 			</article>
 		</section>
-		<section id="highlight" class="slider"> 
-			<div class="slide slide-1"><img src="img/slide-1.jpg" alt="" /></div> 
-			<div class="slide slide-4"><img src="img/slide-4.jpg" alt="" /></div> 
-			<div class="slide slide-2"><img src="img/slide-2.jpg" alt="" /></div> 
-			<div class="slide slide-3"><img src="img/slide-3.jpg" alt="" /></div> 
-
-			<article id="navegation" class="slider-navegacion">
-				<p class="selected">
-					<a href="javascript:;"></a>Yoyo
-					Rico yoyo casero
-				</p>
-				<p>
-					<a href="javascript:;"></a>Torta
-					Torta con chupa-chupas
-				</p>
-				<p>
-					<a href="javascript:;"></a>Masas
-					Masitas de cuidate
-				</p>
-				<p class="withoutborder">
-					<a href="javascript:;"></a>Alfajor
-					Torta alfajor
-				</p>
-			</article >
+		<!-- <section id="highlight" class="slider">  -->
+		<section id="slideshow" class="cycle-slideshow slideshow wrapper slider"
+			data-cycle-caption="#alt-caption"
+			data-cycle-fx="fade"
+			data-cycle-caption-template="{{alt}}"
+			data-cycle-next=".next"
+			data-cycle-prev=".back"
+			data-cycle-pause-on-hover="false"
+			data-cycle-timeout="2500"
+			data-cycle-speed="500"
+			>
+			<img class="slide" src="img/slide-1.jpg" alt="Negocios" />
+			<img class="slide" src="img/slide-2.jpg" alt="Balances Lances" />
+			<img class="slide" src="img/slide-3.jpg" alt="Infonegocios" />
+			
+			<div class="slider-caption">
+				<div id="alt-caption"></div>
+			</div>
+			<div class="slider--contenedor">
+				<div class="slider--navegacion">
+					<a title="‹" class="back boton negro icon-arrow-left" href="#"></a>
+					<a title="›" class="next boton negro icon-arrow-right" href="#"></a>
+				</div>
+			</div>	
 		</section>
 	</section>

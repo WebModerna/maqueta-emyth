@@ -7,6 +7,23 @@ Barra lateral derecha
 <div class="columna--right">
 	<aside class="widget">
 		<section>
+			<article>
+				<div class="formulario">
+					<form action="" class="formulario--busqueda">
+						<div>
+							<input class="input" placeholder="Chusmear..." type="text" />
+						</div>
+						<div>
+							<button class="boton icon-search"></button>
+						</div>
+					</form>
+				</div>
+			</article>
+		</section>
+	</aside>
+
+	<aside class="widget">
+		<section>
 			<header>
 				<h4>Widget 5</h4>
 			</header>

@@ -8,7 +8,7 @@ require_once "header.php";?>
 		<section>
 			<article>
 				<header class="heading">
-					<h1><span class="icon-organization right"></span>El Blog de Radio Tertulia. Tu opinión y la tullia</h1>
+					<h1><span class="icon-users right"></span>El Blog de Radio Tertulia. Tu opinión y la tullia</h1>
 				</header>
 			</article>
 		</section>
@@ -37,23 +37,23 @@ require_once "header.php";?>
 					</div>
 						<ul class="elementos_post">
 							<li>
-								<span class="icon-calendar right"></span>
+								<span class="icon-calendar"></span>
 								<a href="#">12/54/9870</a>
 							</li>
 							<li>
-								<span class="icon-tag-fill right"></span>
+								<span class="icon-tag-fill"></span>
 								<a href="#">Inmobiliaria</a>
 							</li>
 							<li>
-								<span class="icon-folder-open right"></span>
+								<span class="icon-folder-open"></span>
 								<a href="#">Promociones</a>
 							</li>
 							<li>
-								<span class="icon-user right"></span>
+								<span class="icon-user"></span>
 								<a href="#">Aurelio Sosa</a>
 							</li>
 							<li>
-								<span class="icon-comment-discussion right"></span>
+								<span class="icon-comment-discussion"></span>
 								<a href="#">4</a>
 							</li>
 						</ul>
@@ -75,23 +75,23 @@ require_once "header.php";?>
 					</div>
 						<ul class="elementos_post">
 							<li>
-								<span class="icon-calendar right"></span>
+								<span class="icon-calendar"></span>
 								<a href="#">12/54/9870</a>
 							</li>
 							<li>
-								<span class="icon-tag-fill right"></span>
+								<span class="icon-tag-fill"></span>
 								<a href="#">Inmobiliaria</a>
 							</li>
 							<li>
-								<span class="icon-folder-open right"></span>
+								<span class="icon-folder-open"></span>
 								<a href="#">Promociones</a>
 							</li>
 							<li>
-								<span class="icon-user right"></span>
+								<span class="icon-user"></span>
 								<a href="#">Aurelio Sosa</a>
 							</li>
 							<li>
-								<span class="icon-comment-discussion right"></span>
+								<span class="icon-comment-discussion"></span>
 								<a href="#">4</a>
 							</li>
 						</ul>
@@ -113,23 +113,23 @@ require_once "header.php";?>
 					</div>
 						<ul class="elementos_post">
 							<li>
-								<span class="icon-calendar right"></span>
+								<span class="icon-calendar"></span>
 								<a href="#">12/54/9870</a>
 							</li>
 							<li>
-								<span class="icon-tag-fill right"></span>
+								<span class="icon-tag-fill"></span>
 								<a href="#">Inmobiliaria</a>
 							</li>
 							<li>
-								<span class="icon-folder-open right"></span>
+								<span class="icon-folder-open"></span>
 								<a href="#">Promociones</a>
 							</li>
 							<li>
-								<span class="icon-user right"></span>
+								<span class="icon-user"></span>
 								<a href="#">Aurelio Sosa</a>
 							</li>
 							<li>
-								<span class="icon-comment-discussion right"></span>
+								<span class="icon-comment-discussion"></span>
 								<a href="#">4</a>
 							</li>
 						</ul>
@@ -151,23 +151,23 @@ require_once "header.php";?>
 					</div>
 						<ul class="elementos_post">
 							<li>
-								<span class="icon-calendar right"></span>
+								<span class="icon-calendar"></span>
 								<a href="#">12/54/9870</a>
 							</li>
 							<li>
-								<span class="icon-tag-fill right"></span>
+								<span class="icon-tag-fill"></span>
 								<a href="#">Inmobiliaria</a>
 							</li>
 							<li>
-								<span class="icon-folder-open right"></span>
+								<span class="icon-folder-open"></span>
 								<a href="#">Promociones</a>
 							</li>
 							<li>
-								<span class="icon-user right"></span>
+								<span class="icon-user"></span>
 								<a href="#">Aurelio Sosa</a>
 							</li>
 							<li>
-								<span class="icon-comment-discussion right"></span>
+								<span class="icon-comment-discussion"></span>
 								<a href="#">4</a>
 							</li>
 						</ul>
@@ -189,23 +189,23 @@ require_once "header.php";?>
 					</div>
 						<ul class="elementos_post">
 							<li>
-								<span class="icon-calendar right"></span>
+								<span class="icon-calendar"></span>
 								<a href="#">12/54/9870</a>
 							</li>
 							<li>
-								<span class="icon-tag-fill right"></span>
+								<span class="icon-tag-fill"></span>
 								<a href="#">Inmobiliaria</a>
 							</li>
 							<li>
-								<span class="icon-folder-open right"></span>
+								<span class="icon-folder-open"></span>
 								<a href="#">Promociones</a>
 							</li>
 							<li>
-								<span class="icon-user right"></span>
+								<span class="icon-user"></span>
 								<a href="#">Aurelio Sosa</a>
 							</li>
 							<li>
-								<span class="icon-comment-discussion right"></span>
+								<span class="icon-comment-discussion"></span>
 								<a href="#">4</a>
 							</li>
 						</ul>
@@ -226,23 +226,23 @@ require_once "header.php";?>
 					</div>
 					<ul class="elementos_post">
 						<li>
-							<span class="icon-calendar right"></span>
+							<span class="icon-calendar"></span>
 							<a href="#">12/54/9870</a>
 						</li>
 						<li>
-							<span class="icon-tag-fill right"></span>
+							<span class="icon-tag-fill"></span>
 							<a href="#">Inmobiliaria</a>
 						</li>
 						<li>
-							<span class="icon-folder-open right"></span>
+							<span class="icon-folder-open"></span>
 							<a href="#">Promociones</a>
 						</li>
 						<li>
-							<span class="icon-user right"></span>
+							<span class="icon-user"></span>
 							<a href="#">Aurelio Sosa</a>
 						</li>
 						<li>
-							<span class="icon-comment-discussion right"></span>
+							<span class="icon-comment-discussion"></span>
 							<a href="#">4</a>
 						</li>
 					</ul>

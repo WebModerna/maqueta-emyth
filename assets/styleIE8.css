@@ -1,3 +1,13 @@
+/* Para backgrounds cover 
+
+
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+
+*/
+
+
 .blog
 {
 	position: relative;

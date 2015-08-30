@@ -6,7 +6,7 @@ require_once "header.php";?>
 		<section>
 			<article>
 				<header class="heading">
-					<h1><span class="icon-price-tags right"></span>Productos ofrecidos</h1>
+					<h1><span class="icon-mail right"></span>Contaco</h1>
 				</header>
 			</article>
 		</section>

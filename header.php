@@ -14,7 +14,7 @@
 		<meta name="description" content="Coaching empresarial" />
 		<title>El blog | Emyth Argentina</title>
 		
-		<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
+		<!--<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>-->
 		
 		<!-- Condicionales de scripts para IE -->
 		<!--[if IE 8]>
@@ -22,7 +22,7 @@
 		<script type="text/javascript" src="js/selectivizr-min.js"></script>
 		<script type="text/javascript" src="js/html5.js"></script>
 		<script src="js/DD_roundies_0.0.2a-min.js" type="text/javascript"></script>
-		<script type="text/javascript">DD_roundies.addRule('.toggle, label', '10px 4px', true);</script>
+		<script type="text/javascript">DD_roundies.addRule('.boton, .selected', '10px', true);</script>
 		<![endif]-->
 		
 
@@ -62,3 +62,6 @@
 				</ul>
 			</nav>
 		</header>
+
+		<section class="fondo" style="background:url('img/test-bg.jpg') center center no-repeat; background-size:cover; -o-background-size:cover; -ms-background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; height:200px; height:40%vh;">
+		</section>

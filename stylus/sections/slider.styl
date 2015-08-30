@@ -2,64 +2,78 @@
 El slider. Por una cuestión de experimento pondré solo backgrounds como imágenes.
 */
 .slider
-	background $asfalto
-	height 100%
-	height 100vh
 	position relative
 	overflow hidden
+	transition_comun()
 	
 	.slide
-		height 100%
-		height 100vh
-		overflow hidden
+		left 0
 		position absolute
+		transition_comun()
+		top 0
 		width 100%
-		img
-			display block
-			opacity 0
-			width 100%
 
 				
-.slider-navegacion
-	height 50%
+.slider-caption
+	background rgba($black, 0.5)
+	border-bottom 0.3em solid rgba($black, 0.5)
+	border-radius 0.3em
+	padding 0.5em 1em
+	position absolute
+	right 1em
+	top 1em
+	transition_comun()
+	z-index 102
+	
+#alt-caption
+	color $white
+	font-size 1.3em
+	font-family $baseHeadingFontFamily
+	opacity 1
+	transition_comun()
+	
+
+// Barra de navegación del slider
+.slider--contenedor
+	box-shadow_lindo()
+	height 100%
+	left 0
 	position absolute
 	top 0
 	width 100%
-	z-index 6
-	p
-		background rgba($morado_claro, 0.5)
-		border-radius 0.3em
-		box-shadow 5px 5px 10px $black
-		color $white
-		font-size 1.2em
-		display inline-block
-		padding 0.5em
-		opacity 0
-		position absolute
-		top 0
-		left 1em
-		transition_comun()
-		visibility hidden
-		width auto
-		a
-			visibility hidden
-	
-	.selected
-		opacity 1
-		transition_comun()
-		visibility visible
+	z-index 102
+
+.slider--navegacion
+	bottom 40%
+	overflow hidden
+	position absolute
+	width 100%
+	a
+		opacity 0.5 !important
+		&:hover
+		&:active
+			opacity 1 !important
+	.next
+		float right
+
 		
-@media only screen and (min-width:30em)
-	.slider-navegacion
-		height 100%
-		padding 1em
-		p
-			left auto
-			right 1em
-			
 @media only screen and (min-width:40em)
-	.slider-navegacion
-		p
-			font-size 2em
+	.slider-caption
+		padding 0.6em 1.2em
+		right 10%
+		top 10%
+	
+	#alt-caption
+		font-size 2em
 		
-			
+	.slider--contenedor
+		&:hover
+		&:focus
+			.slider--navegacion
+				.back
+					margin-left 1em
+				.next
+					margin-right 1em
+
+	.slider--navegacion
+		bottom 50%

@@ -1,5 +1,5 @@
 //SlideShow
-<!--
+
 function highlight()
 {
 	this.images = new Array();
@@ -196,7 +196,7 @@ function highlight()
 	}
 	
 }
--->
+
 
 // Activacion del SlideShow
 var sweet = new highlight();
