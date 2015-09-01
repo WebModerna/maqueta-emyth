@@ -1137,6 +1137,14 @@ a .aligncenter {
   margin-left: auto;
   margin-bottom: 1em;
 }
+.centrado {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.clearboth {
+  clear: both;
+}
 .ul_horizontal li {
   display: inline-block;
 }
@@ -3359,275 +3367,274 @@ cite:before {
   font-weight: bolder;
 }
 form {
-  width: 100%;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-form label {
-  margin-bottom: 5px;
-  width: 100%;
+form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-form textarea,
-form input[type="text"],
-form input[type="password"],
-form input[type="datetime"],
-form input[type="datetime-local"],
-form input[type="date"],
-form input[type="month"],
-form input[type="time"],
-form input[type="week"],
-form input[type="number"],
-form input[type="email"],
-form input[type="url"],
-form input[type="tel"],
-form input[type="color"],
-form select {
-  width: 100%;
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin: auto 0.5em;
+}
+form input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .hform {
-  width: 100%;
   max-width: 420px;
-}
-.vform,
-.hform {
-  margin-bottom: 20px;
-  font: 16px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  width: 100%;
 }
 .hform label {
+  margin-bottom: 0.5em;
   width: 40%;
-  margin-bottom: 10px;
 }
-.vform label,
-.hform label {
-  font-size: 14px;
-  line-height: 21px;
-  vertical-align: middle;
-  display: block;
-  float: left;
-  text-align: left;
-}
-.hform textarea,
-.hform input[type="text"],
-.hform input[type="password"],
+.hform input[type="color"],
 .hform input[type="datetime"],
 .hform input[type="datetime-local"],
 .hform input[type="date"],
-.hform input[type="month"],
-.hform input[type="time"],
-.hform input[type="week"],
-.hform input[type="number"],
 .hform input[type="email"],
-.hform input[type="url"],
+.hform input[type="number"],
+.hform input[type="month"],
+.hform input[type="password"],
+.hform input[type="search"],
 .hform input[type="tel"],
-.hform input[type="color"],
+.hform input[type="text"],
+.hform input[type="time"],
+.hform input[type="url"],
+.hform input[type="week"],
+.hform textarea,
 .hform select {
   width: 60%;
 }
-.vform textarea,
-.vform input[type="text"],
-.vform input[type="password"],
+.hform input.pre,
+.hform input.post {
+  float: left;
+  height: 30px;
+  width: 45%;
+}
+.hform input.pre-post {
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  float: left;
+  height: 30px;
+  width: 40%;
+}
+.vform {
+  max-width: 320px;
+  width: 100%;
+}
+.vform label {
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+.vform input[type="color"],
 .vform input[type="datetime"],
 .vform input[type="datetime-local"],
 .vform input[type="date"],
-.vform input[type="month"],
-.vform input[type="time"],
-.vform input[type="week"],
-.vform input[type="number"],
 .vform input[type="email"],
-.vform input[type="url"],
+.vform input[type="number"],
+.vform input[type="month"],
+.vform input[type="password"],
+.vform input[type="search"],
 .vform input[type="tel"],
-.vform input[type="color"],
-.vform select,
-.vform input[type=file],
-.hform textarea,
-.hform input[type="text"],
-.hform input[type="password"],
-.hform input[type="datetime"],
-.hform input[type="datetime-local"],
-.hform input[type="date"],
-.hform input[type="month"],
-.hform input[type="time"],
-.hform input[type="week"],
-.hform input[type="number"],
-.hform input[type="email"],
-.hform input[type="url"],
-.hform input[type="tel"],
-.hform input[type="color"],
-.hform select,
-.hform input[type=file] {
+.vform input[type="text"],
+.vform input[type="time"],
+.vform input[type="url"],
+.vform input[type="week"],
+.vform textarea,
+.vform select {
+  width: 100%;
+}
+.vform input.pre,
+.vform input.post {
+  float: left;
+  height: 30px;
+  width: 75%;
+}
+.vform input.pre-post {
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  float: left;
+  height: 30px;
+  width: 70%;
+}
+.hform,
+.vform {
+  color: #333;
+  margin-bottom: 20px;
+}
+.hform fieldset,
+.vform fieldset {
+  margin-bottom: 10px;
+}
+.hform label,
+.vform label {
   display: block;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
+  float: left;
+  text-align: left;
   vertical-align: middle;
-  outline: none;
+}
+.hform input[type="color"],
+.vform input[type="color"],
+.hform input[type="datetime"],
+.vform input[type="datetime"],
+.hform input[type="datetime-local"],
+.vform input[type="datetime-local"],
+.hform input[type="date"],
+.vform input[type="date"],
+.hform input[type="file"],
+.vform input[type="file"],
+.hform input[type="email"],
+.vform input[type="email"],
+.hform input[type="number"],
+.vform input[type="number"],
+.hform input[type="month"],
+.vform input[type="month"],
+.hform input[type="password"],
+.vform input[type="password"],
+.hform input[type="search"],
+.vform input[type="search"],
+.hform input[type="tel"],
+.vform input[type="tel"],
+.hform input[type="text"],
+.vform input[type="text"],
+.hform input[type="time"],
+.vform input[type="time"],
+.hform input[type="url"],
+.vform input[type="url"],
+.hform input[type="week"],
+.vform input[type="week"],
+.hform select,
+.vform select,
+.hform textarea,
+.vform textarea {
+  background: #fff;
+  border: 1px solid #aaa;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-transition: border linear 0.4s box-shadow linear 0.4s;
-  -moz-transition: border linear 0.4s box-shadow linear 0.4s;
-  -o-transition: border linear 0.4s box-shadow linear 0.4s;
-  -ms-transition: border linear 0.4s box-shadow linear 0.4s;
-  transition: border linear 0.4s box-shadow linear 0.4s;
-  margin-bottom: 10px;
+  display: block;
   font-size: 13px;
-  line-height: 21px;
   height: 30px;
+  line-height: 21px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  outline: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  vertical-align: middle;
 }
-.vform input[type="text"]:focus,
-.vform input[type="password"]:focus,
-.vform input[type="datetime"]:focus,
-.vform input[type="email"]:focus,
-.vform input[type="datetime-local"]:focus,
-.vform input[type="date"]:focus,
-.vform input[type="month"]:focus,
-.vform input[type="time"]:focus,
-.vform input[type="week"]:focus,
-.vform input[type="url"]:focus,
-.vform input[type="number"]:focus,
-.vform input[type="search"]:focus,
-.vform input[type="tel"]:focus,
-.vform textarea:focus,
-.hform textarea:focus,
-.hform input[type="text"]:focus,
-.hform input[type="password"]:focus,
+.hform input[type="color"]:focus,
+.vform input[type="color"]:focus,
 .hform input[type="datetime"]:focus,
+.vform input[type="datetime"]:focus,
 .hform input[type="datetime-local"]:focus,
+.vform input[type="datetime-local"]:focus,
 .hform input[type="date"]:focus,
-.hform input[type="month"]:focus,
-.hform input[type="time"]:focus,
-.hform input[type="week"]:focus,
-.hform input[type="number"]:focus,
+.vform input[type="date"]:focus,
+.hform input[type="file"]:focus,
+.vform input[type="file"]:focus,
 .hform input[type="email"]:focus,
-.hform input[type="url"]:focus,
+.vform input[type="email"]:focus,
+.hform input[type="number"]:focus,
+.vform input[type="number"]:focus,
+.hform input[type="month"]:focus,
+.vform input[type="month"]:focus,
+.hform input[type="password"]:focus,
+.vform input[type="password"]:focus,
 .hform input[type="search"]:focus,
+.vform input[type="search"]:focus,
 .hform input[type="tel"]:focus,
-.hform input[type="color"]:focus {
-  border: 1px solid;
-  border-color: rgba(82,168,236,0.8);
-  color: #444;
+.vform input[type="tel"]:focus,
+.hform input[type="text"]:focus,
+.vform input[type="text"]:focus,
+.hform input[type="time"]:focus,
+.vform input[type="time"]:focus,
+.hform input[type="url"]:focus,
+.vform input[type="url"]:focus,
+.hform input[type="week"]:focus,
+.vform input[type="week"]:focus,
+.hform select:focus,
+.vform select:focus,
+.hform textarea:focus,
+.vform textarea:focus {
+  border: 1px solid #47a5c5;
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) 0 0 8px rgba(81,168,236,0.5);
   -o-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) 0 0 8px rgba(81,168,236,0.5);
   -ms-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) 0 0 8px rgba(81,168,236,0.5);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) 0 0 8px rgba(81,168,236,0.5);
+  color: #444;
 }
-.vform textarea,
-.hform textarea {
-  min-height: 120px;
-}
-.vform fieldset,
-.hform fieldset {
-  margin-bottom: 10px;
-}
-.vform input[type="file"],
-.hform input[type="file"] {
+.hform input[type="file"],
+.vform input[type="file"] {
   overflow: none;
 }
-.vform span.pre,
+.hform input.pre,
+.vform input.pre {
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.hform input.post,
+.vform input.post {
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.hform textarea,
+.vform textarea {
+  min-height: 120px;
+}
 .hform span.pre,
-.vform span.post,
-.hform span.post {
+.vform span.pre,
+.hform span.post,
+.vform span.post {
+  background-color: #da572b;
+  border: 1px solid #aaa;
+  color: #fff;
   display: block;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  color: #222;
   font-size: 13px;
   line-height: 18px;
   height: 30px;
-  position: relative;
   padding: 5px 10px;
+  position: relative;
 }
-.vform span.pre,
-.hform span.pre {
-  margin-right: -1px;
+.hform span.pre,
+.vform span.pre {
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
   float: left;
+  margin-right: -1px;
 }
-.vform span.post,
-.hform span.post {
+.hform span.post,
+.vform span.post {
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
   margin-left: -1px;
   float: left;
 }
-.vform input.post,
-.hform input.post,
-.vform span.pre,
-.hform span.pre {
-  -webkit-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  -webkit-border-radius: 4px 0 0 4px;
-}
-.vform input.pre,
-.hform input.pre,
-.vform span.post,
-.hform span.post {
-  -webkit-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
-  -moz-border-radius: 0 4px 4px 0;
-  -webkit-border-radius: 0 4px 4px 0;
-}
-.vform input.pre,
-.vform input.post {
-  width: 75%;
-  float: left;
-  height: 30px;
-}
-.hform input.pre,
-.hform input.post {
-  width: 45%;
-  float: left;
-  height: 30px;
-}
-.vform input.pre-post {
-  width: 70%;
-  float: left;
-  height: 30px;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.hform input.pre-post {
-  width: 40%;
-  float: left;
-  height: 30px;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.vform span[type="submit"].post,
-.hform span[type="submit"].post,
+.hform span[type="submit"].pre,
 .vform span[type="submit"].pre,
-.hform span[type="submit"].pre {
+.hform span[type="submit"].post,
+.vform span[type="submit"].post {
+  background: #da572b;
+  color: #fff;
   cursor: pointer;
-  background-color: #f5f5f5;
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -moz-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -o-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -ms-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: linear-gradient(to bottom, #f9f9f9, #efefef);
-  background-image: -ms--webkit-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -ms--moz-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -ms--o-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -ms--ms-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -ms-linear-gradient(to bottom, #f9f9f9, #efefef);
-  background-image: -moz--webkit-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -moz--moz-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -moz--o-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -moz--ms-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -moz-linear-gradient(to bottom, #f9f9f9, #efefef);
-  background-image: -webkit--webkit-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -webkit--moz-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -webkit--o-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -webkit--ms-linear-gradient(top, #f9f9f9, #efefef);
-  background-image: -webkit-linear-gradient(to bottom, #f9f9f9, #efefef);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#efefef');
 }
-.vform span[type="submit"].post:hover,
-.hform span[type="submit"].post:hover,
+.hform span[type="submit"].pre:hover,
 .vform span[type="submit"].pre:hover,
-.hform span[type="submit"].pre:hover {
-  background: #eee;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-linear-gradient(top, #eee, #f8f8f8)
+.hform span[type="submit"].post:hover,
+.vform span[type="submit"].post:hover {
+  background: #c0392b;
+}
+.formulario {
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  vertical-align: top;
 }
 .header {
   background: #444;

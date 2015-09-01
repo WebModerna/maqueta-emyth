@@ -49,7 +49,7 @@
 				</a>
 			</div>
 			
-			<nav class="nav">
+			<nav class="nav" id="nav_home">
 				<ul id="header_nav" class="nav--listado">
 					<li class="nav--listado--item current_menu_item current_page_item"><a href="index.php">Home</a></li>
 					<li class="nav--listado--item"><a href="#productos">Productos</a></li>

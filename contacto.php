@@ -6,7 +6,7 @@ require_once "header.php";?>
 		<section>
 			<article>
 				<header class="heading">
-					<h1><span class="icon-mail right"></span>Contaco</h1>
+					<h1><span class="icon-mail right left"></span>Contaco</h1>
 				</header>
 			</article>
 		</section>
@@ -19,348 +19,152 @@ require_once "header.php";?>
 		</section>
 		
 		<section>
-			<article class="contenedor__item">
-				<div class="item">
-					<header class="heading-item morado">
-						<h3>Oferta 1</h3>
-					</header>
-					<figure>
-						<div class="etiqueta">
-							<span class="icon-star right"></span>Oferta
-						</div>
-						<img src="img/p5.jpg" alt="">
-					</figure>
-					<table>
-						<thead>
-							<tr>
-								<th>N°</th>
-								<th>guenas</th>
-								<th>chau</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td><td>3 Idiots</td><td>$ 70.07 million</td>
-							</tr>        
-							<tr>
-								<td>2</td><td>Bodyguard</td><td>$ 41.86 million</td>
-							</tr>
-							<tr>
-								<td>3</td><td>My name is khan</td><td>$ 36.4 million</td>
-							</tr>    
-							<tr>
-								<td>4 </td>
-								<td>Om Shanti Om</td>
-								<td>Om Om</td>
-							</tr>
-							<tr>
-								<td>5</td><td>Singh is king</td><td>$ 22.75 million</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Ra. One</td>
-								<td>$ 20.93 million</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Jodhaa Akbar</td>
-								<td>$ 20.38 million</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>$ 20.38 million</td>
-								<td>$ 20.38</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Dhoom 2</td>
-								<td>$ 14.56 million</td>
-							</tr>
-							<tr>
-								<td>10</td>
-								<td>Housefull</td>
-								<td>$ 13.1 million</td>
-							</tr> 
-						</tbody>
-						<tfoot>
-							<tr>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-							</tr>
-						</tfoot>
-					</table>
-					<a href="#" class="boton rojo large">Comprar</a>
+			<article class="centrado">
+				<h2>Crear tu cuenta gratarola</h2>
+				<div class="formulario">
+					<form class="vform" name="" id="" action="">
+						<fieldset>
+							<label>Input</label>
+							<input type="text" name="" id="" placeholder="Sample Input" />
+						</fieldset>
+						<fieldset>
+							<label>Datepicker</label>
+							<input type="date" class="datepicker" name="" id="datepicker1" style="width:100%" placeholder="mm/dd/yyyy" />
+						</fieldset>
+						<fieldset>
+							<label>Select List</label>
+							<select name="" id="">
+								<option value="Option 1">Option 1</option>
+								<option value="Option 2">Option 2</option>
+								<option value="Option 3">Option 3</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label>Textarea</label>
+							<textarea name="" id=""></textarea>
+						</fieldset>
+						<fieldset>
+							<label>Checkboxes</label>
+							<label>
+								<input type="checkbox" id="checkbox" value="checkbox1" />
+								<span>Checkbox1</span>
+							</label>
+							<label>
+								<input type="checkbox" id="checkbox" value="checkbox2" />
+								<span>Checkbox2</span>
+							</label>
+						</fieldset>
+						<fieldset>
+							<label>Radio Buttons</label>
+							<label>
+								<input type="radio" name="radio" id="radio" value="radio1" />
+								<span>Radio1</span>
+							</label>
+							<label>
+								<input type="radio" name="radio" id="radio" value="radio2" />
+								<span>Radio2</span>
+							</label>
+						</fieldset>
+						<fieldset>
+							<label>Prepended input</label>
+							<span class="pre">$</span>
+							<input class="pre" type="text" name="" id="" />
+						</fieldset>
+						<fieldset>
+							<label>Appended input</label>
+							<input class="post" type="text" name="" id="" />
+							<span class="post">.com</span>
+						</fieldset>
+						<fieldset>
+							<label>combined input</label>
+							<span class="pre">$</span>
+							<input class="pre-post" type="text" name="" id="" />
+							<span class="post">.00</span>
+						</fieldset>
+						<fieldset>
+							<label>Search</label>
+							<span type="submit" class="pre" name="">Search</span>
+							<input class="pre" type="text" name="" id="" />
+						</fieldset>
+						<fieldset>
+							<label>Search</label>
+							<input class="post" type="text" name="" id="" />
+							<span type="submit" class="post" name="">Search</span>
+						</fieldset>
+					</form>
 				</div>
-			</article>
-			
-			<article class="contenedor__item">
-				<div class="item">
-					<header class="heading-item azul">
-						<h3>Oferta 1</h3>
-					</header>
-					<figure>
-						<div class="etiqueta etiqueta-rojo">
-							<span class="icon-star right"></span>Oferta
-						</div>
-						<img src="img/p5.jpg" alt="">
-					</figure>
-					<table>
-						<thead>
-							<tr>
-								<th>N°</th>
-								<th>guenas</th>
-								<th>chau</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td><td>3 Idiots</td><td>$ 70.07 million</td>
-							</tr>        
-							<tr>
-								<td>2</td><td>Bodyguard</td><td>$ 41.86 million</td>
-							</tr>
-							<tr>
-								<td>3</td><td>My name is khan</td><td>$ 36.4 million</td>
-							</tr>    
-							<tr>
-								<td>4 </td>
-								<td>Om Shanti Om</td>
-								<td>Om Om</td>
-							</tr>
-							<tr>
-								<td>5</td><td>Singh is king</td><td>$ 22.75 million</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Ra. One</td>
-								<td>$ 20.93 million</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Jodhaa Akbar</td>
-								<td>$ 20.38 million</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>$ 20.38 million</td>
-								<td>$ 20.38</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Dhoom 2</td>
-								<td>$ 14.56 million</td>
-							</tr>
-							<tr>
-								<td>10</td>
-								<td>Housefull</td>
-								<td>$ 13.1 million</td>
-							</tr> 
-						</tbody>
-						<tfoot>
-							<tr>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-							</tr>
-						</tfoot>
-					</table>
-					<a href="#" class="boton azul large">Vender</a>
-				</div>
-			</article>
-			
-			<article class="contenedor__item">
-				<div class="item">
-					<header class="heading-item google">
-						<h3>Oferta 1</h3>
-					</header>
-					<figure>
-						<div class="etiqueta etiqueta-verde">
-							<span class="icon-star right"></span>Oferta
-						</div>
-						<img src="img/p5.jpg" alt="">
-					</figure>
-					<table>
-						<thead>
-							<tr>
-								<th>N°</th>
-								<th>guenas</th>
-								<th>chau</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td><td>3 Idiots</td><td>$ 70.07 million</td>
-							</tr>        
-							<tr>
-								<td>2</td><td>Bodyguard</td><td>$ 41.86 million</td>
-							</tr>
-							<tr>
-								<td>3</td><td>My name is khan</td><td>$ 36.4 million</td>
-							</tr>    
-							<tr>
-								<td>4 </td>
-								<td>Om Shanti Om</td>
-								<td>Om Om</td>
-							</tr>
-							<tr>
-								<td>5</td><td>Singh is king</td><td>$ 22.75 million</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Ra. One</td>
-								<td>$ 20.93 million</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Jodhaa Akbar</td>
-								<td>$ 20.38 million</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>$ 20.38 million</td>
-								<td>$ 20.38</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Dhoom 2</td>
-								<td>$ 14.56 million</td>
-							</tr>
-							<tr>
-								<td>10</td>
-								<td>Housefull</td>
-								<td>$ 13.1 million</td>
-							</tr> 
-						</tbody>
-						<tfoot>
-							<tr>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-							</tr>
-						</tfoot>
-					</table>
-					<a href="#" class="boton large morado"><span class="icon icon-home right"></span>Ni idea</a>
-				</div>
-			</article>
-			
-			<article class="contenedor__item">
-				<div class="item">
-					<header class="heading-item verde">
-						<h3>Oferta 1</h3>
-					</header>
-					<figure>
-						<div class="etiqueta etiqueta-negro">
-							<span class="icon-star verde right"></span>Oferta
-						</div>
-						<img src="img/p5.jpg" alt="">
-					</figure>
-					<table>
-						<thead>
-							<tr>
-								<th>N°</th>
-								<th>guenas</th>
-								<th>chau</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td><td>3 Idiots</td><td>$ 70.07 million</td>
-							</tr>        
-							<tr>
-								<td>2</td><td>Bodyguard</td><td>$ 41.86 million</td>
-							</tr>
-							<tr>
-								<td>3</td><td>My name is khan</td><td>$ 36.4 million</td>
-							</tr>    
-							<tr>
-								<td>4 </td>
-								<td>Om Shanti Om</td>
-								<td>Om Om</td>
-							</tr>
-							<tr>
-								<td>5</td><td>Singh is king</td><td>$ 22.75 million</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Ra. One</td>
-								<td>$ 20.93 million</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Jodhaa Akbar</td>
-								<td>$ 20.38 million</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>$ 20.38 million</td>
-								<td>$ 20.38</td>
-							</tr>
-							<tr>
-								<td>9</td>
-								<td>Dhoom 2</td>
-								<td>$ 14.56 million</td>
-							</tr>
-							<tr>
-								<td>10</td>
-								<td>Housefull</td>
-								<td>$ 13.1 million</td>
-							</tr> 
-						</tbody>
-						<tfoot>
-							<tr>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-								<td>
-									hola que tal	
-								</td>
-							</tr>
-						</tfoot>
-					</table>
-					<a href="#" class="boton verde large">Comprar</a>
+				<div class="formulario">
+					<form class="hform" name="" id="">
+						<label>Input</label>
+						<input type="text" name="" id="" placeholder="Sample Input" />
+					
+						<label>Datepicker</label>
+						<input type="date" class="datepicker" name="" id="datepicker2" placeholder="mm/dd/yyyy" />
+					
+						<label>Select List</label>
+						<select name="" id="">
+							<option value="Option 1">Option 1</option>
+							<option value="Option 2">Option 2</option>
+							<option value="Option 3">Option 3</option>
+						</select>
+					
+						<label>Textarea</label>
+						<textarea name="" id=""></textarea>
+						<fieldset>
+							<label>Checkboxes</label>
+							<input type="checkbox" name="checkbox" id="checkbox" value="checkbox1" />Checkbox1
+							<input type="checkbox" name="checkbox" id="checkbox" value="checkbox2" />Checkbox2
+						</fieldset>
+						<fieldset>
+							<label>Radio Buttons</label>
+							<input type="radio" name="radio" id="radio" value="radio1" />Radio1
+							<input type="radio" name="radio" id="radio" value="radio2" />Radio2
+						</fieldset>
+						<fieldset>
+							<label>Prepended input</label>
+							<span class="pre">$</span>
+							<input class="pre" type="text" name="" id="" />
+						</fieldset>
+						
+						<fieldset>
+							<label>Appended input</label>
+							<input class="post" type="text" name="" id="" />
+							<span class="post">.com</span>
+						</fieldset>
+						<fieldset>
+							<label>combined input</label>
+							<span class="pre">$</span>
+							<input class="pre-post" type="text" name="" id="" />
+							<span class="post">.00</span>
+						</fieldset>
+						<fieldset>
+							<label>Search</label>
+							<span type="submit" class="pre icon-search" name=""></span>
+							<input class="pre" type="text" name="" id="" />
+						</fieldset>
+						<fieldset>
+							<label>Search</label>
+							<input class="post" type="text" name="" id="" />
+							<span type="submit" class="post" name=""><i class="icon-search right"></i>Buscar</span>
+						</fieldset>
+
+						<button type="submit" class="boton azul">
+							<span class="icon-enter right"></span>
+							Registrarse
+						</button>
+						<button type="reset" class="boton rojo">
+							<span class="icon-x right"></span>
+							Borrar
+						</button>
+					</form>
 				</div>
 			</article>
 		</section>
-
-
+		
 		<section>
-			<div class='pagination'>
-				<span>Página 14 de 60</span>
-				<a href='' class="boton small" title="Primero">&laquo;</a>
-				<a href='' class="boton small" title="Atrás">&lsaquo;</a>
-				<a href='' class='inactive boton small'>11</a>
-				<a href='' class='inactive boton small'>12</a>
-				<a href='' class='inactive boton small'>13</a>
-				<span class='current'>14</span>
-				<a href='' class='inactive boton small'>15</a>
-				<a href='' class='inactive boton small'>16</a>
-				<a href='' class='inactive boton small'>17</a>
-				<a href='' class='inactive boton small'>18</a>
-				<a href='' class="boton small" title="Siguiente">&rsaquo;</a>
-				<a href='' class="boton small" title="Ultimo">&raquo;</a>
-			</div>
+			<article>
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4989085320008!2d-68.853548!3d-32.937834999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDU2JzE2LjIiUyA2OMKwNTEnMTIuOCJX!5e0!3m2!1ses!2sar!4v1434225259242" width="100%" height="300" frameborder="0" style="border:0"></iframe> -->
+			</article>
 		</section>
 	</main>
 

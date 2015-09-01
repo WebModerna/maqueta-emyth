@@ -7,15 +7,16 @@ Barra lateral derecha
 <div class="columna--right">
 	<aside class="widget">
 		<section>
+			<header>
+				<h4>Buscar</h4>
+			</header>
 			<article>
-				<div class="formulario">
-					<form action="" class="formulario--busqueda">
-						<div>
-							<input class="input" placeholder="Chusmear..." type="text" />
-						</div>
-						<div>
-							<button class="boton icon-search"></button>
-						</div>
+				<div>
+					<form action="" class="vform">
+						<fieldset>
+							<input class="post" type="search" placeholder="Chusmear..." name="" id="" />
+							<!-- <span type="submit" class="post" name=""><i class="icon-search right"></i>Buscar</span> -->							<span type="submit" class="post icon-search" name=""></span>
+						</fieldset>
 					</form>
 				</div>
 			</article>

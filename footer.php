@@ -19,7 +19,9 @@
 		
 		<!-- scripts generales y condicionales para IE-->
 		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript" src="js/slideshow.js"></script>
+		<!-- Javascript y css de los alamanques -->
+		<script src="js/datepicker-completo.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="assets/datepicker.css" />
 		<!--[if IE 8]>
 		<script type="text/javascript" src="js/respond.js"></script>
 		<![endif]-->

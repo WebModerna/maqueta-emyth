@@ -58,10 +58,10 @@
 					<li class="nav--listado--item"><a href="#">Deshubicación</a></li>
 					<li class="nav--listado--item"><a href="#">Servicios</a></li>
 					<li class="nav--listado--item"><a href="#">About Us</a></li>
-					<li class="nav--listado--item"><a href="#">Contacto</a></li>
+					<li class="nav--listado--item"><a href="contacto.php">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<section class="fondo" style="background:url('img/test-bg.jpg') center center no-repeat; background-size:cover; -o-background-size:cover; -ms-background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; height:200px; height:40%vh;">
+		<section class="fondo" style="background:url('img/webmoderna-propaganda.jpg') top left no-repeat; background-size:cover; -o-background-size:cover; -ms-background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; height:200px; height:40%vh;">
 		</section>

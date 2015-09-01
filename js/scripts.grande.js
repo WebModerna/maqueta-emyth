@@ -17297,3 +17297,121 @@ JWPlayerVideo.prototype.replay = function() {
 		}
 	});
 }());
+
+
+
+
+// El buscador
+/*(function()
+{
+	$(document).on("ready", buscar);
+	function buscar()
+	{
+		$('#boton_buscar').on("click", abriendo);
+	};
+	function abriendo(ev)
+	{
+		ev.preventDefault();
+		$('#boton_buscar').addClass('boton__buscar--abierto');
+		$('#barra_busqueda').addClass('busqueda--abierta');
+		$('#boton_buscar').off("click", abriendo);
+		$('#boton_buscar').on("click", cerrando);
+		function cerrando(ev)
+		{
+			ev.preventDefault();
+			$('#boton_buscar').removeClass('boton__buscar--abierto');
+			$('#barra_busqueda').removeClass('busqueda--abierta');
+			$('#boton_buscar').off("click", cerrando);
+			$('#boton_buscar').on("click", abriendo);
+		};
+	};
+}());*/
+
+
+// Los cuadros de información. Se debería mejorar el script
+/*(function()
+{
+	$(document).on("ready", cerrar_cuadro);
+	function cerrar_cuadro()
+	{
+		$('.alerta-rojo .alerta--close a').on("click", borrando);
+		function borrando(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-rojo').remove();
+		}
+
+		$('.alerta-verde .alerta--close a').on("click", borrando2);
+		function borrando2(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-verde').remove();
+		}
+
+		$('.alerta-azul .alerta--close a').on("click", borrando3);
+		function borrando3(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-azul').remove();
+		}
+
+		$('.alerta-amarillo .alerta--close a').on("click", borrando4);
+		function borrando4(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-amarillo').remove();
+		}
+
+		$('.alerta-gris .alerta--close a').on("click", borrando5);
+		function borrando5(ev)
+		{
+			ev.preventDefault();
+			$('.alerta-gris').remove();
+		}
+	}
+}());*/
+
+/*
+// Redimensionador del slider
+(function()
+{
+	$(document).on("ready", medidor);
+
+	function medidor()
+	{
+		var alto_imagen_slide = $('.slide .activo').height();
+		// console.log(alto_imagen_slide);
+		
+		var altura_Slider = $('#slideshow').height();
+		// console.log(altura_Slider);
+
+		$('#slideshow').css(
+		{
+			'height':alto_imagen_slide
+		});
+		$('#slideshow .slide').css(
+		{
+			'height':alto_imagen_slide
+		});
+
+
+		$(window).resize(redimensionando);
+		function redimensionando()
+		{
+			var alto = $(window).width();
+			// console.log(alto);
+			nuevo_alto_imagen_slide = $('.slide img').height();
+			// console.log(nuevo_alto_imagen_slide);
+			$('#slideshow').css(
+			{
+				'height':nuevo_alto_imagen_slide 
+			});
+			$('#slideshow .slide').css(
+			{
+				'height':alto_imagen_slide
+			});
+		};
+		return redimensionando();
+	}
+}());
+*/

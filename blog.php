@@ -8,7 +8,7 @@ require_once "header.php";?>
 		<section>
 			<article>
 				<header class="heading">
-					<h1><span class="icon-users right"></span>El Blog de Radio Tertulia. Tu opinión y la tullia</h1>
+					<h1><span class="icon-users left right"></span>El Blog de Radio Tertulia. Tu opinión y la tullia</h1>
 				</header>
 			</article>
 		</section>

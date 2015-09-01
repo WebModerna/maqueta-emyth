@@ -19,7 +19,7 @@ require_once "slider.php";
 
 		<section name="productos" class="portfolio">
 			<header class="heading">
-				<h2><span class="icon-price-tags right"></span>Productos</h2>
+				<h2><span class="icon-price-tags right left"></span>Productos</h2>
 			</header>
 			
 			<article class="contenedor__item">

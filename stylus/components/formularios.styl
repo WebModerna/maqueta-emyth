@@ -1,166 +1,193 @@
-/*
-Formularios
-*/
-// Formulario Común
+// Formularios lo más completo que se pueda. 
+
+// Estilos en general
 form
-	width 100%
+	font-family "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+	fieldset
+		border none
+		margin 0
+		padding 0
+	input[type="checkbox"]
+	input[type="radio"]
+		margin auto 0.5em
 	
+	input[type="search"]
+		box-sizing border-box
+		
+
+// Formularios verticales => .vform y Formularios Horizonatles => .hform
+.hform
+	max-width 420px
+	width 100%
 	label
-		margin-bottom 5px
-		width 100%
-	textarea
-	input[type="text"]
-	input[type="password"]
+		margin-bottom 0.5em
+		width 40%
+	input[type="color"]
 	input[type="datetime"]
 	input[type="datetime-local"]
 	input[type="date"]
-	input[type="month"]
-	input[type="time"]
-	input[type="week"]
-	input[type="number"]
 	input[type="email"]
-	input[type="url"]
+	input[type="number"]
+	input[type="month"]
+	input[type="password"]
+	input[type="search"]
 	input[type="tel"]
+	input[type="text"]
+	input[type="time"]
+	input[type="url"]
+	input[type="week"]
+	textarea
+	select
+		width 60%
+
+	input
+		&.pre
+		&.post
+			float left 
+			height 30px
+			width 45%
+	
+		&.pre-post
+			border-radius 0 !important
+			float left 
+			height 30px 
+			width 40%
+
+.vform
+	max-width 320px
+	width 100%
+	label
+		margin-bottom 0.5em
+		width 100%
 	input[type="color"]
+	input[type="datetime"]
+	input[type="datetime-local"]
+	input[type="date"]
+	input[type="email"]
+	input[type="number"]
+	input[type="month"]
+	input[type="password"]
+	input[type="search"]
+	input[type="tel"]
+	input[type="text"]
+	input[type="time"]
+	input[type="url"]
+	input[type="week"]
+	textarea
 	select
 		width 100%
+		
+	input
+		&.pre
+		&.post
+			float left
+			height 30px
+			width 75%
+
+		&.pre-post
+			border-radius 0 !important
+			float left 
+			height 30px 
+			width 70%
 
 
-/* ---- Formulario Horizontal---- */
-.hform {width: 100%; max-width: 420px;}
-.vform, .hform {margin-bottom: 20px; font:16px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #333;}
+.hform
+.vform
+	color #333
+	margin-bottom 20px
+	
+	fieldset
+		margin-bottom 10px
+	
+	label
+		display block
+		float left
+		text-align left
+		vertical-align middle
 
-.hform label {width: 40%; margin-bottom: 10px; }
-.vform label, .hform label {font-size: 14px; line-height: 21px; vertical-align: middle; display: block; float: left; text-align: left;}
-
-.hform textarea, .hform input[type="text"], .hform input[type="password"], .hform input[type="datetime"], .hform input[type="datetime-local"], .hform input[type="date"], 
-.hform input[type="month"], .hform input[type="time"], .hform input[type="week"], .hform input[type="number"], .hform input[type="email"], .hform input[type="url"], 
-.hform input[type="tel"], .hform input[type="color"], .hform select {
-	width: 60%;
-}
-
-.vform textarea, .vform input[type="text"], .vform input[type="password"], .vform input[type="datetime"], .vform input[type="datetime-local"], .vform input[type="date"], 
-.vform input[type="month"], .vform input[type="time"], .vform input[type="week"], .vform input[type="number"], .vform input[type="email"], .vform input[type="url"], 
-.vform input[type="tel"], .vform input[type="color"], .vform select, .vform input[type=file],
-.hform textarea, .hform input[type="text"], .hform input[type="password"], .hform input[type="datetime"], .hform input[type="datetime-local"], .hform input[type="date"], 
-.hform input[type="month"], .hform input[type="time"], .hform input[type="week"], .hform input[type="number"], .hform input[type="email"], .hform input[type="url"], 
-.hform input[type="tel"], .hform input[type="color"], .hform select, .hform input[type=file] {
-	display: block;
-	background: #ffffff;
-	border: 1px solid #cccccc;
-	padding: 5px 10px;
-	vertical-align: middle;
-	outline: none;	
-	border-radius(4px)
-	transition(border linear 0.4s, box-shadow linear 0.4s)
-	margin-bottom: 10px;
-	font-size: 13px; 
-	line-height: 21px; 
-	height: 30px;
-} 
-.vform input[type="text"]:focus, .vform input[type="password"]:focus, .vform input[type="datetime"]:focus, .vform input[type="email"]:focus,
-.vform input[type="datetime-local"]:focus, .vform input[type="date"]:focus, .vform input[type="month"]:focus, .vform input[type="time"]:focus, 
-.vform input[type="week"]:focus, .vform input[type="url"]:focus, .vform input[type="number"]:focus, .vform input[type="search"]:focus, .vform input[type="tel"]:focus, 
-.vform textarea:focus,
-.hform textarea:focus, .hform input[type="text"]:focus, .hform input[type="password"]:focus, .hform input[type="datetime"]:focus, 
-.hform input[type="datetime-local"]:focus, .hform input[type="date"]:focus, .hform input[type="month"]:focus, .hform input[type="time"]:focus, 
-.hform input[type="week"]:focus, .hform input[type="number"]:focus, .hform input[type="email"]:focus, .hform input[type="url"]:focus, .hform input[type="search"]:focus, 
-.hform input[type="tel"]:focus, .hform input[type="color"]:focus{
-	border: 1px solid;
-	border-color: rgba(82, 168, 236, 0.8);
-	color: #444;
-	box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(81, 168, 236, 0.5))
-}
-.vform textarea, .hform textarea{min-height: 120px; }
-.vform fieldset, .hform fieldset {margin-bottom: 10px; }
-.vform input[type="file"], .hform input[type="file"] {overflow: none;}
-/* conjoined inputs */
-.vform span.pre, .hform span.pre, .vform span.post, .hform span.post {
-	display: block;	
-	background-color: #f2f2f2; 
-	border: 1px solid #cccccc;
-	color: #222222;
-	font-size: 13px; 
-	line-height: 18px;
-	height: 30px;
-	position: relative;
-	padding: 5px 10px;
-}
-.vform span.pre, .hform span.pre{margin-right: -1px; float: left;	}
-.vform span.post, .hform span.post{margin-left: -1px; float: left;}
-.vform input.post, .hform input.post, .vform span.pre, .hform span.pre{
-	border-radius: 4px 0 0 4px;
-	-moz-border-radius: 4px 0 0 4px;
-	-webkit-border-radius: 4px 0 0 4px;
-}
-.vform input.pre, .hform input.pre, .vform span.post, .hform span.post{
-	border-radius: 0 4px 4px 0;
-	-moz-border-radius: 0 4px 4px 0;
-	-webkit-border-radius: 0 4px 4px 0;
-}
-.vform input.pre, .vform input.post{width:75%; float:left; height: 30px;}
-.hform input.pre, .hform input.post{width:45%; float:left; height: 30px;}
-.vform input.pre-post{width: 70%; float: left; height: 30px; border-radius: 0;}
-.hform input.pre-post{width: 40%; float: left; height: 30px; border-radius: 0;}
-.vform span[type="submit"].post, .hform span[type="submit"].post, .vform span[type="submit"].pre, .hform span[type="submit"].pre{
-	cursor: pointer;
-	background-color: #f5f5f5;
-	background-image: linear-gradient(top, #f9f9f9, #efefef);
-	background-image: -ms-linear-gradient(top, #f9f9f9, #efefef);
-	background-image: -moz-linear-gradient(top, #f9f9f9, #efefef);  
-	background-image: -webkit-linear-gradient(top, #f9f9f9, #efefef);
-	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#efefef')");
-}
-.vform span[type="submit"].post:hover, .hform span[type="submit"].post:hover, .vform span[type="submit"].pre:hover, .hform span[type="submit"].pre:hover{
-	background:#eee;
-	background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
-	background_gradiente(linear-gradient(top, #eee, #f8f8f8) )
-}
-
-
-/*
-form
+	input[type="color"]
+	input[type="datetime"]
+	input[type="datetime-local"]
 	input[type="date"]
-	input[type="mail"]
+	input[type="file"]
+	input[type="email"]
 	input[type="number"]
-	input[type="phone"]
+	input[type="month"]
+	input[type="password"]
 	input[type="search"]
+	input[type="tel"]
 	input[type="text"]
+	input[type="time"]
+	input[type="url"]
+	input[type="week"]
+	select
 	textarea
 		background $white
-		border none
-		color $gris_fuerte
-		margin 0
-		padding 0.3em 0.7em
-		transition_comun()
-		width 100%
+		border 1px solid $gray
+		border-radius(4px)
+		display block
+		font-size 13px
+		height 30px
+		line-height 21px 
+		margin-bottom 10px
+		padding 5px 10px
+		outline none	
+		transition all 0.4s ease-in-out
 		vertical-align middle
 		&:focus
-			background rgba($ladrillo, 0.3)
-	
-// Formulario de búsqueda
-.formulario--busqueda
-	border 1px solid $silver
-	box-shadow 0px 0px 2px $gris_fuerte
-	font-size 1.5em
-	overflow hidden
+			// border 1px solid rgba(82, 168, 236, 0.8)
+			border 1px solid $Celeste
+			box-shadow( inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(81, 168, 236, 0.5) )
+			color #444
 
-	.boton
-		background $ladrillo
-		border none
-		box-shadow none
-		border-radius 0
-		margin 0
-		display block
-		&:hover
-		&:active
-			background $google
+	input[type="file"]
+		overflow none
+	
+	input
+		&.pre
+			border-radius 0 4px 4px 0
+
+		&.post
+			border-radius 4px 0 0 4px
+		
+	textarea
+		min-height 120px
+	
+	span
+		&.pre
+		&.post
+			background-color $NaranjaLadrillo
+			border 1px solid $gray
+			color $white
+			display block	
+			font-size 13px 
+			line-height 18px
+			height 30px
+			padding 5px 10px
+			position relative
+
+		&.pre
+			border-radius 4px 0 0 4px
+			float left
+			margin-right -1px
+
+		&.post
+			border-radius 0 4px 4px 0
+			margin-left -1px
+			float left
 			
-	.input
-		heigth 100%
-		display block
-	
-	div
-		display table-cell
-		width 100%
-	
+	span[type="submit"]
+		&.pre
+		&.post
+			background $NaranjaLadrillo
+			color $white
+			cursor pointer
+			&:hover
+				background $google
+				
+// Estilos particulares de alguna plantilla
+.formulario
+	display inline-block
+	margin-left 0.5em
+	margin-right 0.5em
+	vertical-align top
