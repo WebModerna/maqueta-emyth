@@ -7,12 +7,15 @@
 		background $black
 		display block
 		font-family $baseHeadingFontFamily
-		top -400px
+		top 0
+		left -500px
 		margin 0
 		opacity 0
 		position absolute
 		padding 0
-		transition_comun()
+		transition all 0.4s ease-in-out
+		transition all 0.6s cubic-bezier(0.5, -0.5, 0.5, 1.5)
+		// transition all 0.3s	cubic-bezier(0.215, 0.610, 0.355, 1.000)
 		visibility hidden
 		width 100%
 	
@@ -35,10 +38,10 @@
 					float right
 					transition_comun()
 				&:before
-					background $ladrillo
+					background $white
 					content ""
 					height 100%
-					left 0
+					right 0
 					opacity 0.5
 					position absolute
 					top 0
@@ -49,8 +52,9 @@
 				// Estilos al hover y al focus
 				&:hover
 				&:focus
+					background $ladrillo
 					&:before
-						width 100%
+						width 10%
 						
 						
 		// Estilo solo al border superior exepto al primer item del menú
@@ -63,11 +67,12 @@
 		&-abrir
 			// height auto
 			top 0
+			left 0
 			opacity 1
 			visibility visible
 		&-cerrar
 			// height 0
-			top -400px
+			left -500px
 			opacity 0
 			visibility hidden
 
@@ -94,6 +99,7 @@
 			overflow hidden
 			position relative
 			top auto
+			left 0
 			vertical-align middle
 			visibility visible
 			&--item

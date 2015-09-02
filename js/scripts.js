@@ -19,6 +19,7 @@
 	function transicion_abrir(ev)
 	{   
 		ev.preventDefault();
+		// $('.header').css({ overflow : 'initial' })
 		$('#header_nav').addClass('nav--listado-abrir');
 		$('#header_nav').removeClass('nav--listado-cerrar');
 		$('#menu').off("click", transicion_abrir);
@@ -29,6 +30,7 @@
 		function transicion_cerrar(ev)
 		{
 			ev.preventDefault();
+			// $('.header').css({ overflow : 'hidden' })
 			$('#header_nav').addClass('nav--listado-cerrar');
 			$('#header_nav').removeClass('nav--listado-abrir');
 			

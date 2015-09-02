@@ -33,6 +33,8 @@ require_once "header.php";?>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 					<h3>Lorem ipsum dolor sit amet,</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
+					<cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</cite>
+					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</blockquote>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 					<h5>Lorem ipsum dolor sit amet,</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
