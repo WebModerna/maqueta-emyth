@@ -18,10 +18,14 @@ require_once "header.php";?>
 			</ul>
 		</section>
 		
+		<section class="error_404">
+			<article class="centrado articulo">
+				ERROR 404	
+			</article>
+		</section>
 		<section>
 			<article class="centrado">
-				<h2>La página que estás buscano no existe.</h2>
-				
+				<h2>La página que estás buscando no existe.</h2>
 			</article>
 		</section>
 	</main>

@@ -1,80 +1,78 @@
-/*!! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-
-// ==========================================================================
 // Print styles.
-// Inlined to avoid the additional HTTP request: h5bp.com/r
-// ==========================================================================
 
 @media print
 	*,
 	*:before,
-	*:after
+	*:after,
+	.wrapper,
 		background transparent !important
-		color #000 !important // Black prints faster h5bp.com/s
+		color #000 !important
 		box-shadow none !important
 		text-shadow none !important
 
-	a,
-	a:visited
-		text-decoration underline
+	a
+		&:visited
+			text-decoration underline
 
-	a[href]:after
-		content " (" attr(href) ")"
-
-	abbr[title]:after
-		content " (" attr(title) ")"
-
-	// Don't show links that are fragment identifiers,
-	// or use the `javascript:` pseudo protocol
+	/*a[href]:after
+		content " (" attr(href) ")"*/
+		
 	a[href^="#"]:after,
 	a[href^="javascript:"]:after
 		content ""
 
+	abbr[title]:after
+		content " (" attr(title) ")"
+
+	blockquote,
+	cite,
 	pre,
-	blockquote
 		border 1px solid #999
 		page-break-inside avoid
 
-	thead
-		display table-header-group // h5bp.com/t
-
-	tr,
-	img
+	img,
+	tr
 		page-break-inside avoid
 
-	img
+	img,
 		max-width 100% !important
 
-	p,
-	h2,
-	h3
+	h2, h3, h4, h5, h6,
+	p
 		orphans 3
 		widows 3
 
-	h2,
-	h3
+	h2,	h3
 		page-break-after avoid
+	
+	h1, h2, h3, h4, h5,
+	.heading
+		background $nube !important
+		border-bottom 1px solid $silver
 
-	// Bootstrap components
-	.nav
-		display none
-
-	.boton
-		border-top-color #000 !important
-
-	.label
-		border 1px solid #000
 
 	table
 		border-collapse collapse !important
-
-		td
+		
+		td,
 		th
 			background-color #fff !important
-
-	table
-		th
-		td
 			border 1px solid #ddd !important
 
-	// Bootstrap specific changes end
+	thead
+		display table-header-group
+	
+	.boton
+		border-top-color #000 !important
+	
+	.contacto,
+	.etiqueta,
+	.etiqueta:after,
+	.etiqueta:before,
+	.nav,
+	.redes_sociales,
+	.video
+		display none
+
+	.label
+		border 1px solid #000

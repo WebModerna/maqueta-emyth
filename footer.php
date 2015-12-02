@@ -1,3 +1,4 @@
+		</div><!-- .wrapper -->
 		<footer class="main__footer">
 			<div class="redes_sociales">
 				<ul>
@@ -20,11 +21,10 @@
 		<!-- scripts generales y condicionales para IE-->
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<!-- Javascript y css de los alamanques -->
+		<!--[if IE 8]>
 		<script src="js/datepicker-completo.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="assets/datepicker.css" />
-		<!--[if IE 8]>
 		<script type="text/javascript" src="js/respond.js"></script>
 		<![endif]-->
-		<script>
 	</body>
 </html>

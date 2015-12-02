@@ -4,6 +4,9 @@ Listado de items de un portfolio de productos o lo que sea
 .portfolio
 	padding 3px
 	text-align center
+	padding-bottom 1em
+	header
+		margin-bottom 1em
 
 .contenedor__item
 	display inline-block
@@ -12,14 +15,14 @@ Listado de items de un portfolio de productos o lo que sea
 	vertical-align top
 
 .item
+	border 1px solid $nube
 	max-width 290px
 	position relative
 	transition_comun()
 	&:hover
 	&:focus
-		background rgba($black, 0.5)
+		border 1px solid $google
 		box-shadow 0px 0px 5px 5px $black
-		transform scale(1.02)
 		
 
 	figure

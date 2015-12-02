@@ -12,6 +12,8 @@ $color_borde_vidiera	?= $silver
 
 
 .Vidriera-2
+	overflow hidden
+	padding-bottom 2em
 	text-align center
 	&--estante
 		border 1px solid $fondo_vidiera
@@ -35,12 +37,13 @@ $color_borde_vidiera	?= $silver
 			position relative
 			width 130px
 			img
+				border 4px double $silver
 				border-radius 50%
-				box-shadow 0px 5px 2px $black
 				display block
 				width 100%
 				transition_comun()
 				&:hover
+					border-color $Celeste
 					transform scale(1.1)
 				
 

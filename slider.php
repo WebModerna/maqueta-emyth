@@ -2,7 +2,7 @@
 		<section>
 			<article>
 				<header class="heading">
-					<h1><span class="icon-organization right"></span>Emyth, tu negocio por las nubes</h1>
+					<h1><span class="icon-organization right"></span>El título h1.</h1>
 				</header>
 			</article>
 		</section>
@@ -20,7 +20,7 @@
 			<img class="slide" src="img/slide-1.jpg" alt="Negocios" />
 			<img class="slide" src="img/slide-2.jpg" alt="Balances Lances" />
 			<img class="slide" src="img/slide-3.jpg" alt="Infonegocios" />
-			
+
 			<div class="slider-caption">
 				<div id="alt-caption"></div>
 			</div>
@@ -29,6 +29,6 @@
 					<a title="‹" class="back boton negro icon-arrow-left" href="#"></a>
 					<a title="›" class="next boton negro icon-arrow-right" href="#"></a>
 				</div>
-			</div>	
+			</div>
 		</section>
 	</section>

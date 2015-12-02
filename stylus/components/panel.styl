@@ -18,6 +18,7 @@ $panel-border-color ?= $silver
 $panel-border-width ?= 1px
 
 .Panel
+.comment
 	background $panel-background-color
 	border $panel-border-width solid $panel-border-color
 	box-shadow 0 $panel-border-width 0 $panel-border-color
@@ -26,45 +27,74 @@ $panel-border-width ?= 1px
 	position relative
 	
 	&--contenido
-		padding 0.5em
+		padding 0.5em		
 	
-	figure
-		// border $panel-border-width solid $panel-border-color
-		margin 0 0 1em 0
-		max-width 20em
-		
-		figcaption
-			border-top $panel-border-width solid $panel-border-color
-			color $gris_fuerte
-			padding 0.5em 1em
-			text-align center
-			&:first-letter
-				text-transform uppercase
+		figure
+		.avatar
+			border $panel-border-width solid $panel-border-color
+			border-radius 0.2em
+			margin 0 0 1em 0
+			max-width 40em
+			overflow hidden
+			&:hover
+				border-color $google
+			
+			figcaption
+				border-top $panel-border-width solid $panel-border-color
+				color $gray
+				font-style italic
+				padding 0.5em 1em
+				position relative
+				text-align center
+				&:first-letter
+					text-transform uppercase
+				&:after
+					border 0.5em solid transparent
+					border-top-color $panel-border-color
+					content ""
+					left 50%
+					position absolute
+					top 0				
 
-		img
-			display block
-			position relative
-			width 100%
+			img
+				border 2px solid $white
+				display block
+				position relative
+				width 100%
+			
+		figure.small
+			max-width 20em
 
-	// No hay necesidad de una clase. Sabemos que va a ser un título.
-	& > h2
-	& > h3
-	& > h4
-	& > h5
-	& > h6
-		background $nube
-		border-bottom $panel-border-width solid $panel-border-color
-		margin 0
+		// No hay necesidad de una clase. Sabemos que va a ser un título.
+		& > h2
+		& > h3
+		& > h4
+		& > h5
+		& > h6
+			// background $nube
+			// border-bottom $panel-border-width solid $panel-border-color
+			margin 0.5em 0 0 0
+			padding 0.3em
+			// text-align center
+				
+	& > &--titular-centrado
+		// background $nube
+		margin 0.5em 0 0 0
 		padding 0.3em
 		text-align center
+		
+	&-borderless
+		background none
+		border none
 
 @media all and (min-width:21em)
 	.Panel
 		&--contenido
 			overflow hidden
-		figure
-			float left
-			margin 1em 1em 1em auto
+			figure
+				float left
+				margin 1em 1em 1em auto
+				
 			
 @media all and (min-width:40em)
 	.Panel--contenedor

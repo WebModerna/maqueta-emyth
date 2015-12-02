@@ -11,7 +11,8 @@ input[type="button"]
 input[type="submit"]
 input[type="reset"]
 .boton
-	background: $Celeste;
+.comment-reply-link
+	background $Celeste
 	*border 0
 	border 1px solid $silver
 	box-shadow 0px -0.2em rgba($black_puro, 0.3) inset
@@ -26,13 +27,14 @@ input[type="reset"]
 	line-height 1.5em 
 	*margin-left 0.3em
 	margin 0.3em 
+	apareance none
 	-moz-apareance none
 	overflow hidden
 	padding 0.6em 1em 
 	text-align center
 	text-overflow ellipsis
 	text-shadow_lindo()
-	text-transform uppercase
+	// text-transform uppercase
 	transition all 0.1s ease-in-out
 	vertical-align middle !important
 	white-space nowrap
@@ -42,6 +44,8 @@ input[type="reset"]
 	&:focus
 	&:active
 		background $NaranjaLadrillo
+		color $white
+		text-decoration none
 	&:active
 		box-shadow none
 	
@@ -102,3 +106,12 @@ input[type="reset"]
 		&:focus
 		&:active
 			background $morado_oscuro
+			
+.comment-reply-link
+	background $celeste_oscuro
+	font-size 0.8em
+	padding 0.4em 0.9em
+		&:hover
+		&:focus
+		&:active
+			background $azul_claro

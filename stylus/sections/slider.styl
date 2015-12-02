@@ -2,10 +2,11 @@
 El slider. Por una cuestión de experimento pondré solo backgrounds como imágenes.
 */
 .slider
+	display none
 	position relative
 	overflow hidden
 	transition_comun()
-	
+
 	.slide
 		left 0
 		position absolute
@@ -13,7 +14,7 @@ El slider. Por una cuestión de experimento pondré solo backgrounds como imáge
 		top 0
 		width 100%
 
-				
+
 .slider-caption
 	background rgba($black, 0.5)
 	border-bottom 0.3em solid rgba($black, 0.5)
@@ -24,14 +25,14 @@ El slider. Por una cuestión de experimento pondré solo backgrounds como imáge
 	top 1em
 	transition_comun()
 	z-index 102
-	
+
 #alt-caption
 	color $white
 	font-size 1.3em
 	font-family $baseHeadingFontFamily
 	opacity 1
 	transition_comun()
-	
+
 
 // Barra de navegación del slider
 .slider--contenedor
@@ -56,16 +57,18 @@ El slider. Por una cuestión de experimento pondré solo backgrounds como imáge
 	.next
 		float right
 
-		
+@media only screen and (min-width:30em)
+	.slider
+		display block
 @media only screen and (min-width:40em)
 	.slider-caption
 		padding 0.6em 1.2em
 		right 10%
 		top 10%
-	
+
 	#alt-caption
 		font-size 2em
-		
+
 	.slider--contenedor
 		&:hover
 		&:focus

@@ -17,20 +17,22 @@ $color_borde_vidiera	?= $silver
 		border-radius 0.5em
 		display inline-block
 		max-width 17em
-		overflow hidden
 		position relative
 
 		.imagen
 			border-bottom 1px solid $color_borde_vidiera
-			box-sizing border-box
-			display block
-			margin auto
 			padding 1em
-			img
+			margin 1em auto
+			div
+				border 1px solid $color_borde_vidiera
 				border-radius 50%
-				display block
-				width 100%
-
+				overflow hidden
+				width auto
+				img
+					border 2px solid $white
+					border-radius 20em
+					display block
+					width 100%
 	
 		.contenido
 			color $gris_fuerte

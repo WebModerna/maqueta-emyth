@@ -23,6 +23,33 @@ require_once "header.php";?>
 			<article class="Panel">
 				<h3>Noticias Destacada</h3>
 				<div class="Panel--contenido">
+					<ul class="elementos_post inline">
+						<li>
+							<span class="icon-calendar"></span>
+							<a href="#">12/54/9870</a>
+						</li>
+						<li>
+							<span class="icon-tag-fill"></span>
+							<a href="#">Inmobiliaria</a>
+						</li>
+						<li>
+							<span class="icon-folder-open"></span>
+							<a href="#">Promociones</a>
+						</li>
+						<li>
+							<span class="icon-user"></span>
+							<a href="#">Aurelio Sosa</a>
+						</li>
+						<li>
+							<span class="icon-comment-discussion"></span>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<span class="icon-pencil"></span>
+							<a href="#">Editar</a>
+						</li>
+					</ul>
+
 					<figure>
 						<img src="img/webmoderna-propaganda.jpg" alt="algo" />
 						<figcaption>explanatory caption</figcaption>
@@ -33,10 +60,18 @@ require_once "header.php";?>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 					<h3>Lorem ipsum dolor sit amet,</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
+					<figure>
+						<img src="img/webmoderna-propaganda.jpg" alt="algo" />
+						<figcaption>explanatory caption</figcaption>
+					</figure>
 					<cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</cite>
 					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis itaque quo, nam. Possimus iste cupiditate ex, animi velit repellat commodi quis ipsa! Quisquam, ad eos, vero amet omnis aliquid.</blockquote>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 					<h5>Lorem ipsum dolor sit amet,</h5>
+					<figure>
+						<img src="img/webmoderna-propaganda.jpg" alt="algo" />
+						<figcaption>explanatory caption</figcaption>
+					</figure>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur sunt dicta libero cum modi nam, reiciendis animi impedit atque obcaecati fugiat quidem quia, vero odit ipsum, qui minima repellat.</p>
 				</div>
 			</article>

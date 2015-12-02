@@ -2,10 +2,10 @@
 // Variables de las Tablas
 $table-celda-color 		?= $white 		// Color de la letra
 $tabla-celda-background ?= $nube		// Fondo de celdas
-$tabla-head-background 	?= $midnight	// Fondo del encabezado
+$tabla-head-background 	?= $black	// Fondo del encabezado
 $tabla-borde-ancho 		?= 1px			// Ancho del borde
 $tabla-borde-color 		?= $gray		// Color del borde
-$tabla-tfoot-background	?= $asfalto		// Fondo del pie de tabla
+$tabla-tfoot-background	?= $black	// Fondo del pie de tabla
 
 
 // Tabla en general
@@ -14,6 +14,13 @@ table
 	box-sizing border-box
 	display table
 	margin 0
+	caption
+		background $tabla-head-background
+		border $tabla-borde-ancho solid $tabla-borde-color
+		border-bottom none
+		color $table-celda-color
+		padding 0.5em 1em
+		text-transform uppercase
 
 
 // Cuerpo de la tabla
@@ -44,7 +51,7 @@ thead
 			text-transform uppercase
 	// Para darle un pequeño separador
 	th + th
-		border-left $tabla-borde-ancho solid $table-celda-color
+		border-left $tabla-borde-ancho solid $tabla-borde-color
 
 
 // El pie de la tabla
@@ -56,4 +63,4 @@ tfoot
 		text-align right
 	// Para darle un pequeño separador
 	td + td
-		border-left $tabla-borde-ancho solid $table-celda-color
+		border-left $tabla-borde-ancho solid $tabla-borde-color

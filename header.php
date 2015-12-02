@@ -63,5 +63,10 @@
 			</nav>
 		</header>
 
-		<section class="fondo" style="background:url('img/webmoderna-propaganda.jpg') top left no-repeat; background-size:cover; -o-background-size:cover; -ms-background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; height:200px; height:40%vh;">
+		<!-- <section class="fondo" style="background:url('img/webmoderna-propaganda.jpg') top left no-repeat fixed; background-size:cover; -o-background-size:cover; -ms-background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; height:200px; height:40%vh;">
+		</section> -->
+
+		<section style="height:200px; height:40%vh;">
+			<video src="img/video_web_ejemplo.mp4" autoplay="true" preload="" loop="" height="auto" width="100%" poster="/img/poster.jpg" style="position:relative; z-index:-1;"></video>
 		</section>
+		<div class="wrapper">

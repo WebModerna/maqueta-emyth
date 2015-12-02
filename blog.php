@@ -1,9 +1,7 @@
 <?php
 // El encabezado completo
 require_once "header.php";?>
-	<section class="fondo" style="background:url('img/')">
-		
-	</section>
+
 	<main class="columna--left">
 		<section>
 			<article>
