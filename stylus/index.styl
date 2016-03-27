@@ -14,11 +14,11 @@
 // @import 'base/animations'
 @import 'base/base'
 @import 'base/headings'
-// @import 'base/grid'
 @import 'base/utility'
 
 // Componentes reutilizables
 @import 'components/lightbox'
+@import 'components/grid'
 @import 'components/alertas'
 @import 'components/buttons'
 @import 'components/icons'
@@ -35,6 +35,7 @@
 @import 'components/formularios'
 @import 'components/articulo'
 @import 'components/galeria'
+@import 'components/cubeportfolio'
 
 // Secciones de la web
 @import 'sections/header'
@@ -73,14 +74,14 @@ label
 	padding 0
 	position relative
 	width 80px
-	
+
 // Ocultar el elemento
 input[type="checkbox"]
 	display none
 	&:checked + .toggle
 		margin-left 60px
 		margin-right 0
-	
+
 	&:checked + .toggle:before
 		display inline-block
 		opacity 1
@@ -88,7 +89,7 @@ input[type="checkbox"]
 	&:checked + .toggle:after
 		opacity 0
 		visibility hidden
-	
+
 // Creamos el toggle o el elemento deslisante
 .toggle
 	background #e1e1e1
@@ -101,9 +102,9 @@ input[type="checkbox"]
 	text-transform uppercase
 	transition all 0.3s ease-in-out
 	width 19px
-	
+
 	// La palabrota "On"
-	&:before 
+	&:before
 		color #0edd0e
 		content "On"
 		opacity 0
